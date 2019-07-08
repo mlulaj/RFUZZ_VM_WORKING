@@ -1,0 +1,3250 @@
+cd firrtl ;\
+  sbt -ivy /home/hut1si/gits/rfuzz2ndtry/.ivy2 publishLocal && touch /home/hut1si/gits/rfuzz2ndtry/firrtl.stamp
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading project definition from /home/hut1si/gits/rfuzz2ndtry/firrtl/project[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ProjectRef(uri("file:/home/hut1si/gits/rfuzz2ndtry/firrtl/project/"), "firrtl-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/jline/jline/2.14.4/jline-2.14.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/github/cb372/scalacache-caffeine_2.12/0.20.0/scalacache-caffeine_2.12-0.20.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/squareup/okio/okio/1.12.0/okio-1.12.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/pantsbuild/jarjar/1.6.5/jarjar-1.6.5.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.1.1/main_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-jetty_2.12/0.9.1/unfiltered-jetty_2.12-0.9.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/9.2.21.v20170120/jetty-webapp-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/parboiled/parboiled-java/1.1.7/parboiled-java-1.1.7.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.5.0.201609210915-r/org.eclipse.jgit-4.5.0.201609210915-r.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/test-agent/1.1.1/test-agent-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/0.4.2/fastparse-utils_2.12-0.4.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/jars/sbt-ghpages.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jgit#org.eclipse.jgit;4.5.0.201609210915-r!org.eclipse.jgit.jar (533ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.53/jsch-0.1.53.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.jcraft#jsch;0.1.53!jsch.jar (95ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.googlecode.javaewah#JavaEWAH;0.7.9!JavaEWAH.jar(bundle) (116ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.3.6!httpclient.jar (148ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-ghpages;0.6.2!sbt-ghpages.jar (1032ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.3.3!httpcore.jar (68ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] commons-logging#commons-logging;1.1.3!commons-logging.jar (85ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/lightbend/paradox/paradox-theme-generic/0.2.13/paradox-theme-generic-0.2.13.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/jars/sbt-site.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lightbend.paradox#paradox-theme-generic;0.2.13!paradox-theme-generic.jar (80ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-directives_2.12/0.9.1/unfiltered-directives_2.12-0.9.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ws.unfiltered#unfiltered-directives_2.12;0.9.1!unfiltered-directives_2.12.jar (105ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-filter_2.12/0.9.1/unfiltered-filter_2.12-0.9.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ws.unfiltered#unfiltered-filter_2.12;0.9.1!unfiltered-filter_2.12.jar (83ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-site;1.3.1!sbt-site.jar (933ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.7.0/jars/sbt-buildinfo.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.github.cb372#scalacache-caffeine_2.12;0.20.0!scalacache-caffeine_2.12.jar (2261ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ws.unfiltered#unfiltered-jetty_2.12;0.9.1!unfiltered-jetty_2.12.jar (2246ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.1.4/io_2.12-1.1.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.parboiled#parboiled-java;1.1.7!parboiled-java.jar (2240ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/foundweekends/pamflet-library_2.12/0.7.1/pamflet-library_2.12-0.7.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#test-agent;1.1.1!test-agent.jar (2296ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.7!slf4j-api.jar (2414ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] jline#jline;2.14.4!jline.jar (2403ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lihaoyi#fastparse-utils_2.12;0.4.2!fastparse-utils_2.12.jar (2356ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#shaded-scalajson_2.12;1.0.0-M4!shaded-scalajson_2.12.jar (2382ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-utils;3.0.22!plexus-utils.jar (2504ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-webapp;9.2.21.v20170120!jetty-webapp.jar (2406ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.squareup.okio#okio;1.12.0!okio.jar (2435ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.antlr#stringtemplate;3.2.1!stringtemplate.jar (2482ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.pantsbuild#jarjar;1.6.5!jarjar.jar (2422ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.1.2/util-control_2.12-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.12/0.10.4/jawn-parser_2.12-0.10.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.3/sourcecode_2.12-0.1.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.1.1/zinc-compile-core_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/foundweekends/knockoff_2.12/0.8.6/knockoff_2.12-0.8.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/9.2.21.v20170120/jetty-xml-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#test-interface;1.0!test-interface.jar (179ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.1.1/zinc-classfile_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#io_2.12;1.1.4!io_2.12.jar (241ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.parboiled#parboiled-core;1.1.7!parboiled-core.jar (214ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.1.2/util-logging_2.12-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-control_2.12;1.1.2!util-control_2.12.jar (101ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.0/jna-4.5.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.foundweekends#pamflet-library_2.12;0.7.1!pamflet-library_2.12.jar (339ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lihaoyi#sourcecode_2.12;0.1.3!sourcecode_2.12.jar (162ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.spire-math#jawn-parser_2.12;0.10.4!jawn-parser_2.12.jar (175ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#main_2.12;1.1.1!main_2.12.jar (2680ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.13/snakeyaml-1.13.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.1.1/core-macros_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.commons#commons-compress;1.9!commons-compress.jar (306ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.3/jackson-core-2.7.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.1.1/completion_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.1.1/logic_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm-analysis;5.0.3!asm-analysis.jar (184ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#core-macros_2.12;1.1.1!core-macros_2.12.jar (127ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.7.3!jackson-core.jar(bundle) (124ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.1.1/protocol_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#completion_2.12;1.1.1!completion_2.12.jar (415ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.yaml#snakeyaml;1.13!snakeyaml.jar(bundle) (453ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-xml;9.2.21.v20170120!jetty-xml.jar (679ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.2.21.v20170120/jetty-servlet-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-classfile_2.12;1.1.1!zinc-classfile_2.12.jar (682ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.1.1/task-system_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm-util;5.0.3!asm-util.jar (374ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.12/1.0.0/scalastyle_2.12-1.0.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/asciidoctor/asciidoctorj/1.5.4/asciidoctorj-1.5.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.4!commons-lang3.jar (764ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-logging_2.12;1.1.2!util-logging_2.12.jar (728ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.foundweekends#knockoff_2.12;0.8.6!knockoff_2.12.jar (792ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-servlet;9.2.21.v20170120!jetty-servlet.jar (135ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.46/jsch-0.1.46.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.1.3/librarymanagement-core_2.12-1.1.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#protocol_2.12;1.1.1!protocol_2.12.jar (537ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-compile-core_2.12;1.1.1!zinc-compile-core_2.12.jar (889ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.1.1/zinc-core_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#task-system_2.12;1.1.1!task-system_2.12.jar (227ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.1.1/tasks_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.2.21.v20170120/jetty-util-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.5/scala-parser-combinators_2.12-1.0.5.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] net.java.dev.jna#jna;4.5.0!jna.jar (837ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.5.0/jna-platform-4.5.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#logic_2.12;1.1.1!logic_2.12.jar (790ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] javax.enterprise#cdi-api;1.0!cdi-api.jar (145ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.1.1/actions_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.antlr#antlr-runtime;3.5.2!antlr-runtime.jar (392ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.4/akka-actor_2.12-2.5.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.jcraft#jsch;0.1.46!jsch.jar (423ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.asciidoctor#asciidoctorj;1.5.4!asciidoctorj.jar (436ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalastyle#scalastyle_2.12;1.0.0!scalastyle_2.12.jar (482ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#tasks_2.12;1.1.1!tasks_2.12.jar (291ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-core_2.12;1.1.1!zinc-core_2.12.jar (329ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-util;9.2.21.v20170120!jetty-util.jar (396ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.1.1/testing_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.2.21.v20170120/jetty-security-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.1.1/zinc-persist_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#template-resolver;0.1!template-resolver.jar (438ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/eed3si9n/gigahorse-okhttp_2.12/0.3.0/gigahorse-okhttp_2.12-0.3.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.0.0/ipcsocket-1.0.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalariform/scalariform_2.12/0.2.0/scalariform_2.12-0.2.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#actions_2.12;1.1.1!actions_2.12.jar (402ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.1.1/main-settings_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.sisu#org.eclipse.sisu.inject;0.3.2!org.eclipse.sisu.inject.jar(eclipse-plugin) (467ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt.ipcsocket#ipcsocket;1.0.0!ipcsocket.jar (110ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#librarymanagement-core_2.12;1.1.3!librarymanagement-core_2.12.jar (644ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.1.3/librarymanagement-ivy_2.12-1.1.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/github/cb372/scalacache-core_2.12/0.20.0/scalacache-core_2.12-0.20.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-security;9.2.21.v20170120!jetty-security.jar (272ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.2.21.v20170120/jetty-server-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#gigahorse-okhttp_2.12;0.3.0!gigahorse-okhttp_2.12.jar (381ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#testing_2.12;1.1.1!testing_2.12.jar (431ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp-urlconnection/3.7.0/okhttp-urlconnection-3.7.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-component-annotations;1.5.5!plexus-component-annotations.jar (288ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.5!scala-parser-combinators_2.12.jar(bundle) (950ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.1.2/util-tracking_2.12-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.github.cb372#scalacache-core_2.12;0.20.0!scalacache-core_2.12.jar (373ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.5.6/caffeine-2.5.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-classworlds;2.5.2!plexus-classworlds.jar(bundle) (102ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.squareup.okhttp3#okhttp-urlconnection;3.7.0!okhttp-urlconnection.jar (271ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-tracking_2.12;1.1.2!util-tracking_2.12.jar (203ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.1.1/zinc-classpath_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] javax.annotation#jsr250-api;1.0!jsr250-api.jar (77ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.3.0/gigahorse-core_2.12-0.3.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#librarymanagement-ivy_2.12;1.1.3!librarymanagement-ivy_2.12.jar (663ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] javax.inject#javax.inject;1!javax.inject.jar (140ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.1.1/compiler-interface-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.1.1/sbt-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-persist_2.12;1.1.1!zinc-persist_2.12.jar (988ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/trueaccord/scalapb/scalapb-runtime_2.12/0.6.0/scalapb-runtime_2.12-0.6.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] antlr#antlr;2.7.7!antlr.jar (408ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar (2361ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-server;9.2.21.v20170120!jetty-server.jar (663ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-classpath_2.12;1.1.1!zinc-classpath_2.12.jar (258ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#gigahorse-core_2.12;0.3.0!gigahorse-core_2.12.jar (167ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/jruby/jruby-complete/1.7.21/jruby-complete-1.7.21.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.9/ant-1.9.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.1.1/zinc-apiinfo_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.github.ben-manes.caffeine#caffeine;2.5.6!caffeine.jar (457ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/3.7.0/okhttp-3.7.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] net.java.dev.jna#jna-platform;4.5.0!jna-platform.jar (1483ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-interface/1.1.2/util-interface-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#compiler-interface;1.1.1!compiler-interface.jar (245ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.1.1/zinc-compile_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalariform#scalariform_2.12;0.2.0!scalariform_2.12.jar (1111ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.0/config-1.2.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#sbt;1.1.1!sbt.jar (237ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-compile_2.12;1.1.1!zinc-compile_2.12.jar (189ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.1.2/util-relation_2.12-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar (365ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.2.21.v20170120/jetty-http-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#main-settings_2.12;1.1.1!main-settings_2.12.jar (1334ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.squareup.okhttp3#okhttp;3.7.0!okhttp.jar (400ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.1.1/run_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe#config;1.2.0!config.jar(bundle) (288ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.2/ssl-config-core_2.12-0.2.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/jars/sbt-paradox.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-relation_2.12;1.1.2!util-relation_2.12.jar (162ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-interface;1.1.2!util-interface.jar (463ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/eed3si9n/sjson-new-scalajson_2.12/0.8.2/sjson-new-scalajson_2.12-0.8.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/lmax/disruptor/3.3.6/disruptor-3.3.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.12;2.5.4!akka-actor_2.12.jar (1821ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-http;9.2.21.v20170120!jetty-http.jar (216ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/webjars/webjars-locator-core/0.32/webjars-locator-core-0.32.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.2.21.v20170120/jetty-io-9.2.21.v20170120.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-apiinfo_2.12;1.1.1!zinc-apiinfo_2.12.jar (598ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#run_2.12;1.1.1!run_2.12.jar (193ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.6!scala-parser-combinators_2.12.jar(bundle) (196ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe#ssl-config-core_2.12;0.2.2!ssl-config-core_2.12.jar(bundle) (198ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc-ivy-integration_2.12/1.1.1/zinc-ivy-integration_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-plugin_2.12/1.3.1/scalac-scoverage-plugin_2.12-1.3.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.1.1/command_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt.ivy#ivy;2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310!ivy.jar (640ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#sjson-new-scalajson_2.12;0.8.2!sjson-new-scalajson_2.12.jar (177ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lmax#disruptor;3.3.6!disruptor.jar (176ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/jline/jline/2.14.5/jline-2.14.5.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.1.2/util-position_2.12-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.4/scala-compiler-2.12.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.jetty#jetty-io;9.2.21.v20170120!jetty-io.jar (237ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.webjars#webjars-locator-core;0.32!webjars-locator-core.jar (240ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc-ivy-integration_2.12;1.1.1!zinc-ivy-integration_2.12.jar (206ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar (185ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.1.1/zinc_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/foundweekends/pamflet-knockoff_2.12/0.7.1/pamflet-knockoff_2.12-0.7.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scoverage#scalac-scoverage-plugin_2.12;1.3.1!scalac-scoverage-plugin_2.12.jar (265ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] jline#jline;2.14.5!jline.jar (177ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#command_2.12;1.1.1!command_2.12.jar (286ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.1.1/collections_2.12-1.1.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-position_2.12;1.1.2!util-position_2.12.jar (202ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe#config;1.3.1!config.jar(bundle) (201ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.foundweekends#pamflet-knockoff_2.12;0.7.1!pamflet-knockoff_2.12.jar (166ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/eed3si9n/sjson-new-core_2.12/0.8.2/sjson-new-core_2.12-0.8.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.ant#ant;1.9.9!ant.jar (1074ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar (186ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#zinc_2.12;1.1.1!zinc_2.12.jar (278ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.trueaccord.scalapb#scalapb-runtime_2.12;0.6.0!scalapb-runtime_2.12.jar (1256ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.4.4/sbinary_2.12-0.4.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#collections_2.12;1.1.1!collections_2.12.jar (318ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm;6.0!asm.jar (252ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.0.2/launcher-interface-1.0.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#sbinary_2.12;0.4.4!sbinary_2.12.jar (194ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/trueaccord/lenses/lenses_2.12/0.4.12/lenses_2.12-0.4.12.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm-commons;6.0!asm-commons.jar (163ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#launcher-interface;1.0.2!launcher-interface.jar (171ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#sjson-new-core_2.12;0.8.2!sjson-new-core_2.12.jar (496ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(bundle) (599ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-java8-compat_2.12;0.8.0!scala-java8-compat_2.12.jar(bundle) (515ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.trueaccord.lenses#lenses_2.12;0.4.12!lenses_2.12.jar (274ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/0.4.2/fastparse_2.12-0.4.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.maven#maven-plugin-api;3.3.9!maven-plugin-api.jar (304ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.9/ant-launcher-1.9.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.logging.log4j#log4j-api;2.8.1!log4j-api.jar (332ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.ant#ant-launcher;1.9.9!ant-launcher.jar (226ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lihaoyi#fastparse_2.12;0.4.2!fastparse_2.12.jar (306ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.3.1/protobuf-java-3.3.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm-tree;6.0!asm-tree.jar (216ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.logging.log4j#log4j-core;2.8.1!log4j-core.jar (469ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.8.1/log4j-slf4j-impl-2.8.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lightbend.paradox#sbt-paradox;0.3.0!sbt-paradox.jar (3530ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.maven#maven-model;3.3.9!maven-model.jar (252ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.logging.log4j#log4j-slf4j-impl;2.8.1!log4j-slf4j-impl.jar (251ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.google.protobuf#protobuf-java;3.3.1!protobuf-java.jar(bundle) (544ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.maven#maven-artifact;3.3.9!maven-artifact.jar (206ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#sbt-buildinfo;0.7.0!sbt-buildinfo.jar (5844ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.2!org.eclipse.sisu.plexus.jar(eclipse-plugin) (183ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/jars/sbt-unidoc.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar (2623ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.1.2/util-cache_2.12-1.1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.4!scala-library.jar (1146ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ws/unfiltered/unfiltered_2.12/0.9.1/unfiltered_2.12-0.9.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-sbt#util-cache_2.12;1.1.2!util-cache_2.12.jar (174ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.8.2/sjson-new-murmurhash_2.12-0.8.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ws.unfiltered#unfiltered_2.12;0.9.1!unfiltered_2.12.jar (210ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ws/unfiltered/unfiltered-util_2.12/0.9.1/unfiltered-util_2.12-0.9.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#sbt-unidoc;0.4.1!sbt-unidoc.jar (881ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalastyle/scalastyle-sbt-plugin_2.12_1.0/1.0.0/scalastyle-sbt-plugin-1.0.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#sjson-new-murmurhash_2.12;0.8.2!sjson-new-murmurhash_2.12.jar (145ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ws.unfiltered#unfiltered-util_2.12;0.9.1!unfiltered-util_2.12.jar (35ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalastyle#scalastyle-sbt-plugin;1.0.0!scalastyle-sbt-plugin.jar (90ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.5.1/sbt-scoverage-1.5.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] commons-codec#commons-codec;1.10!commons-codec.jar (90ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scoverage#sbt-scoverage;1.5.1!sbt-scoverage.jar (89ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle) (130ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.jruby#jruby-complete;1.7.21!jruby-complete.jar(bundle) (4032ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/beust/jcommander/1.35/jcommander-1.35.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.14.6/jars/sbt-assembly.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.beust#jcommander;1.35!jcommander.jar (80ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/lightbend/paradox/paradox_2.12/0.3.0/paradox_2.12-0.3.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.lightbend.paradox#paradox_2.12;0.3.0!paradox_2.12.jar (109ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/jars/sbt-web.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-web;1.4.2!sbt-web.jar (774ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/pegdown/pegdown/1.6.0/pegdown-1.6.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.pegdown#pegdown;1.6.0!pegdown.jar (125ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.antlr#ST4;4.0.8!ST4.jar (112ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.eed3si9n#sbt-assembly;0.14.6!sbt-assembly.jar (1507ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.simplytyped/sbt-antlr4/scala_2.12/sbt_1.0/0.8.1/jars/sbt-antlr4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.simplytyped#sbt-antlr4;0.8.1!sbt-antlr4.jar (723ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/jars/sbt-git.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-git;0.9.3!sbt-git.jar (694ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[33mwarn[0m] [0m[0mFound version conflict(s) in library dependencies; some are suspected to be binary incompatible:[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* org.ow2.asm:asm-tree:6.0 is selected over 5.0.3[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-commons:6.0                        (depends on 6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-util:5.0.3                         (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-analysis:5.0.3                     (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* org.ow2.asm:asm:6.0 is selected over 5.0.3[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.pantsbuild:jarjar:1.6.5                        (depends on 6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-tree:6.0                           (depends on 6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-tree:5.0.3                         (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0mRun 'evicted' to see detailed eviction warnings[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mSet current project to firrtl (in build file:/home/hut1si/gits/rfuzz2ndtry/firrtl/)[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ...[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT-sources.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/jline/jline/2.14.3/jline-2.14.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.12/scala-compiler-2.11.12.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.13.4/scalacheck_2.11-1.13.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.14.0/nscala-time_2.11-2.14.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.11/0.4.0/moultingyaml_2.11-0.4.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.github.nscala-time#nscala-time_2.11;2.14.0!nscala-time_2.11.jar (150ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.json4s#json4s-scalap_2.11;3.5.3!json4s-scalap_2.11.jar (648ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.yaml#snakeyaml;1.17!snakeyaml.jar(bundle) (341ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.abego.treelayout#org.abego.treelayout.core;1.0.3!org.abego.treelayout.core.jar(bundle) (739ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] jline#jline;2.14.3!jline.jar (930ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(bundle) (333ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/antlr/antlr4/4.7/antlr4-4.7.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] net.jcazevedo#moultingyaml_2.11;0.4.0!moultingyaml_2.11.jar (972ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.11/3.5.3/json4s-native_2.11-3.5.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.json4s#json4s-core_2.11;3.5.3!json4s-core_2.11.jar (962ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.glassfish#javax.json;1.0.4!javax.json.jar(bundle) (402ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/ibm/icu/icu4j/58.2/icu4j-58.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar (1164ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] ch.qos.logback#logback-core;1.2.3!logback-core.jar (1111ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/github/scopt/scopt_2.11/3.6.0/scopt_2.11-3.6.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.json4s#json4s-native_2.11;3.5.3!json4s-native_2.11.jar (450ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] joda-time#joda-time;2.9.4!joda-time.jar (1524ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.6!scala-xml_2.11.jar(bundle) (1608ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.5!scala-xml_2.11.jar(bundle) (1763ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.json4s#json4s-ast_2.11;3.5.3!json4s-ast_2.11.jar (729ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.github.scopt#scopt_2.11;3.6.0!scopt_2.11.jar (762ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.joda#joda-convert;1.2!joda-convert.jar (377ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.antlr#antlr4;4.7!antlr4.jar (1248ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalacheck#scalacheck_2.11;1.13.4!scalacheck_2.11.jar (2228ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle) (467ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalactic#scalactic_2.11;3.0.1!scalactic_2.11.jar(bundle) (539ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.12!scala-reflect.jar (2748ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.7.2/scala-logging_2.11-3.7.2.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.typesafe.scala-logging#scala-logging_2.11;3.7.2!scala-logging_2.11.jar(bundle) (141ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.12!scala-library.jar (3109ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.antlr#antlr4-runtime;4.7!antlr4-runtime.jar (255ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalatest#scalatest_2.11;3.0.1!scalatest_2.11.jar(bundle) (2489ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] com.ibm.icu#icu4j;58.2!icu4j.jar (3573ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.11.12!scala-compiler.jar (4779ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mWrote /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT.pom[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/unidoc...[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 84 Scala sources and 4 Java sources to /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/passes/ExpandWhens.scala:71:5: discarding unmoored doc comment[0m
+[0m[[0m[33mwarn[0m] [0m[0m    /** Removes connections/attaches from the statement[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 32 feature warnings; re-run with -feature for details[0m
+model contains 560 documentable templates
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/transforms/CheckCombLoops.scala:27:1: Could not find any member to link for "CombLoopException".[0m
+[0m[[0m[33mwarn[0m] [0m[0m/** Finds and detects combinational logic loops in a circuit, if any[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/graph/DiGraph.scala:349:3: Could not find any member to link for "IllegalArgumentException".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Add edge (u,v) to the graph.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/graph/DiGraph.scala:300:3: Could not find any member to link for "IllegalArgumentException".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Return a simplified connectivity graph with only a subset of the nodes[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/graph/DiGraph.scala:287:3: Could not find any member to link for "IllegalArgumentException".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Return a graph with only a subset of the nodes[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/tutorial/lesson2-working-ir/AnalyzeCircuit.scala:64:1: Could not find any member to link for "ToWorkingIR".[0m
+[0m[[0m[33mwarn[0m] [0m[0m/** AnalyzeCircuit Transform[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/tutorial/lesson1-circuit-traversal/AnalyzeCircuit.scala:48:1: Could not find any member to link for "Circuit".[0m
+[0m[[0m[33mwarn[0m] [0m[0m/** AnalyzeCircuit Transform[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/tutorial/lesson1-circuit-traversal/AnalyzeCircuit.scala:15:1: Could not find any member to link for "Mux".[0m
+[0m[[0m[33mwarn[0m] [0m[0m/** Ledger tracks [[firrtl.ir.Circuit]] statistics[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/transforms/FlattenRegUpdate.scala:14:3: Could not find any member to link for "Expression".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Mapping from references to the [[Expression]]s that drive them */[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/transforms/FlattenRegUpdate.scala:17:3: Could not find any member to link for "Module".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Build a [[Netlist]] from a Module's connections and Nodes[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/transforms/FlattenRegUpdate.scala:41:3: Could not find any member to link for "Module".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Flatten Register Updates[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/passes/RemoveValidIf.scala:18:3: Could not find any member to link for "Expression".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Returns an [[Expression]] equal to zero for a given [[GroundType]][0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/Driver.scala:93:40: method getAnnotationFileName in class FirrtlExecutionOptions is deprecated: Use FirrtlOptions.annotationFileNames instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val oldAnnoFileName = firrtlConfig.getAnnotationFileName(optionsManager)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/Parser.scala:33:41: class ANTLRInputStream in package runtime is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        val lexer = new FIRRTLLexer(new ANTLRInputStream(inStream))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/passes/memlib/ReplaceMemMacros.scala:217:68: method getMyAnnotations in class Transform is deprecated: Just collect the actual Annotation types the transform wants[0m
+[0m[[0m[33mwarn[0m] [0m[0m      case _ => throwInternalError(s"execute: getMyAnnotations - ${getMyAnnotations(state)}")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/analyses/InstanceGraph.scala:78:3: Could not find any member to link for "EulerTour".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** An `[[EulerTour]]` representation of the `[[DiGraph]]` */[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/Compiler.scala:53:3: Could not find any member to link for "ComponentName".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Get renames of a [[ComponentName]][0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/Compiler.scala:38:3: Could not find any member to link for "ModuleName".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Get renames of a [[ModuleName]][0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/firrtl/src/main/scala/firrtl/Compiler.scala:31:3: Could not find any member to link for "CircuitName".[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /** Get renames of a [[CircuitName]][0m
+[0m[[0m[33mwarn[0m] [0m[0m  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m17 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT-javadoc.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 32 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0mbootstrap class path not set in conjunction with -source 1.7[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0minfo[0m] [0m[0m:: delivering :: edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT :: 1.2-SNAPSHOT :: integration :: Mon Jul 08 11:35:01 CEST 2019[0m
+[0m[[0m[0minfo[0m] [0m[0m	delivering ivy file to /home/hut1si/gits/rfuzz2ndtry/firrtl/target/scala-2.11/ivy-1.2-SNAPSHOT.xml[0m
+[0m[[0m[0minfo[0m] [0m[0m	published firrtl_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/poms/firrtl_2.11.pom[0m
+[0m[[0m[0minfo[0m] [0m[0m	published firrtl_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/jars/firrtl_2.11.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published firrtl_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/srcs/firrtl_2.11-sources.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published firrtl_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/docs/firrtl_2.11-javadoc.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ivy to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 160 s, completed Jul 8, 2019 11:35:02 AM[0m
+cd chisel3 ;\
+  sbt -ivy /home/hut1si/gits/rfuzz2ndtry/.ivy2 publishLocal && touch /home/hut1si/gits/rfuzz2ndtry/chisel.stamp
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading project definition from /home/hut1si/gits/rfuzz2ndtry/chisel3/project[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ProjectRef(uri("file:/home/hut1si/gits/rfuzz2ndtry/chisel3/project/"), "chisel3-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm;5.0.3!asm.jar (451ms)[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.1!commons-lang3.jar (454ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.ow2.asm#asm-tree;5.0.3!asm-tree.jar (100ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mSet current project to chisel3 (in build file:/home/hut1si/gits/rfuzz2ndtry/chisel3/)[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating coreMacros...[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT-sources.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[33mwarn[0m] [0m[0mChoosing local for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT[0m
+[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.11.12/2.1.0/paradise_2.11.12-2.1.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scalamacros#paradise_2.11.12;2.1.0!paradise_2.11.12.jar (85ms)[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mWrote /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT.pom[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating chiselFrontend...[0m
+[0m[[0m[33mwarn[0m] [0m[0mChoosing local for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 4 Scala sources to /home/hut1si/gits/rfuzz2ndtry/chisel3/coreMacros/target/scala-2.11/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mSorting results from edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT, using Mon Jul 08 11:35:01 CEST 2019 and Mon Jul 08 11:35:01 CEST 2019.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSorting results from edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT, using Mon Jul 08 11:35:01 CEST 2019 and Mon Jul 08 11:35:01 CEST 2019.[0m
+[0m[[0m[33mwarn[0m] [0m[0mChoosing sonatype-snapshots for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 28 Scala sources to /home/hut1si/gits/rfuzz2ndtry/chisel3/chiselFrontend/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/chisel3/chiselFrontend/src/main/scala/chisel3/core/Aggregate.scala:81:24: method flatten in class Data is deprecated: pending removal once all instances replaced[0m
+[0m[[0m[33mwarn[0m] [0m[0m    SeqUtils.do_asUInt(flatten.map(_.asUInt()))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/chisel3/chiselFrontend/src/main/scala/chisel3/core/Aggregate.scala:87:15: method flatten in class Data is deprecated: pending removal once all instances replaced[0m
+[0m[[0m[33mwarn[0m] [0m[0m    for (x <- flatten) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/chisel3/chiselFrontend/src/main/scala/chisel3/core/Annotation.scala:47:30: method apply in object Annotation is deprecated: This returns a LegacyAnnotation, use an explicit Annotation type[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def toFirrtl: Annotation = Annotation(component.toNamed, transformClass, value)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/chisel3/chiselFrontend/src/main/scala/chisel3/core/Assert.scala:41:57: method lineContent in trait Position is deprecated: Removed from the public API[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val condStr = s"${p.source.file.name}:${p.line} ${p.lineContent.trim}"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/hut1si/gits/rfuzz2ndtry/chisel3/chiselFrontend/src/main/scala/chisel3/core/Assert.scala:49:57: method lineContent in trait Position is deprecated: Removed from the public API[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val condStr = s"${p.source.file.name}:${p.line} ${p.lineContent.trim}"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 29 Scala sources to /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/api...[0m
+model contains 143 documentable templates
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.UInt".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.SInt".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Bool".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.FixedPoint".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Clock".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Reg".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Bits".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Aggregate".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Data".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Bundle".[0m
+[0m[[0m[33mwarn[0m] [0m[0mCould not find any member to link for "chisel3.core.Vec".[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[33mwarn[0m] [0m[0m11 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT-javadoc.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0minfo[0m] [0m[0m:: delivering :: edu.berkeley.cs#chisel3_2.11;3.2-SNAPSHOT :: 3.2-SNAPSHOT :: integration :: Mon Jul 08 11:37:06 CEST 2019[0m
+[0m[[0m[0minfo[0m] [0m[0m	delivering ivy file to /home/hut1si/gits/rfuzz2ndtry/chisel3/target/scala-2.11/ivy-3.2-SNAPSHOT.xml[0m
+[0m[[0m[0minfo[0m] [0m[0m	published chisel3_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/poms/chisel3_2.11.pom[0m
+[0m[[0m[0minfo[0m] [0m[0m	published chisel3_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/jars/chisel3_2.11.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published chisel3_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/srcs/chisel3_2.11-sources.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published chisel3_2.11 to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/docs/chisel3_2.11-javadoc.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ivy to /home/hut1si/gits/rfuzz2ndtry/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 78 s, completed Jul 8, 2019 11:37:07 AM[0m
+cd instrumentation ;\
+sbt -ivy /home/hut1si/gits/rfuzz2ndtry/.ivy2 "runMain hardwareafl.firrtltransforms.CustomTop -i /home/hut1si/gits/rfuzz2ndtry/benchmarks/Sodor3Stage.fir -o /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.v -X verilog -ll info -fct hardwareafl.firrtltransforms.NoDedupTransform,hardwareafl.firrtltransforms.ReplaceMemsTransform,hardwareafl.firrtltransforms.SplitMuxConditions,hardwareafl.firrtltransforms.ProfilingTransform,firrtl.passes.wiring.WiringTransform,hardwareafl.firrtltransforms.AddMetaResetTransform "
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from plugins.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading project definition from /home/hut1si/gits/rfuzz2ndtry/instrumentation/project[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ProjectRef(uri("file:/home/hut1si/gits/rfuzz2ndtry/instrumentation/project/"), "instrumentation-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[33mwarn[0m] [0m[0mFound version conflict(s) in library dependencies; some are suspected to be binary incompatible:[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* org.ow2.asm:asm-tree:6.0 is selected over 5.0.3[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-commons:6.0                        (depends on 6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-util:5.0.3                         (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-analysis:5.0.3                     (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	* org.ow2.asm:asm:6.0 is selected over 5.0.3[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.pantsbuild:jarjar:1.6.5                        (depends on 6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-tree:6.0                           (depends on 6.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m	    +- org.ow2.asm:asm-tree:5.0.3                         (depends on 5.0.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0mRun 'evicted' to see detailed eviction warnings[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mSet current project to instrumentation (in build file:/home/hut1si/gits/rfuzz2ndtry/instrumentation/)[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mChoosing local for edu.berkeley.cs#chisel3_2.11;3.2-SNAPSHOT[0m
+[0m[[0m[33mwarn[0m] [0m[0mChoosing local for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 11 Scala sources to /home/hut1si/gits/rfuzz2ndtry/instrumentation/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 6 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/instrumentation/target/scala-2.11/instrumentation_2.11-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0minfo[0m] [0m[0mRunning hardwareafl.firrtltransforms.CustomTop -i /home/hut1si/gits/rfuzz2ndtry/benchmarks/Sodor3Stage.fir -o /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.v -X verilog -ll info -fct hardwareafl.firrtltransforms.NoDedupTransform,hardwareafl.firrtltransforms.ReplaceMemsTransform,hardwareafl.firrtltransforms.SplitMuxConditions,hardwareafl.firrtltransforms.ProfilingTransform,firrtl.passes.wiring.WiringTransform,hardwareafl.firrtltransforms.AddMetaResetTransform[0m
+Running transforms:
+  NoDedupTransform
+  ChirrtlToHighFirrtl
+  IRToWorkingIR
+  ResolveAndCheck
+  DedupModules
+  HighFirrtlToMiddleFirrtl
+  MiddleFirrtlToLowFirrtl
+  CustomLowFirrtlOpt
+  BlackBoxSourceHelper
+  ReplaceMemsTransform
+  IRToWorkingIR
+  ResolveAndCheck
+  DedupModules
+  HighFirrtlToMiddleFirrtl
+  SplitMuxConditions
+  MiddleFirrtlToLowFirrtl
+  ProfilingTransform
+  WiringTransform
+  IRToWorkingIR
+  ResolveAndCheck
+  DedupModules
+  HighFirrtlToMiddleFirrtl
+  MiddleFirrtlToLowFirrtl
+  AddMetaResetTransform
+======== Starting Transform NoDedupTransform ========
+-----------------------------------------------------
+
+Time: 49.7 ms
+Form: ChirrtlForm
+======== Finished Transform NoDedupTransform ========
+
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 96.0 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 110.6 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 59.2 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 713.8 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 1001.0 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 14.8 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 18.5 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 165.5 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 37.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 72.8 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 75.5 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 212.4 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 13.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 24.5 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 25.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 44.6 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 121.1 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 40.8 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 877.2 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 269.9 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 18.4 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 11.4 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 22.3 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 47.0 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 53.5 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 153.8 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 12.3 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 18.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 37.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 15.6 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 6.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 39.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 6.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 77.9 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 57.8 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 602.2 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlToLowFirrtl ========
+======== Starting Transform LowerTypes$ ========
+------------------------------------------------
+
+Time: 339.0 ms
+Form: UnknownForm
+======== Finished Transform LowerTypes$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 25.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 28.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 7.4 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 53.9 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 19.0 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 12.8 ms
+Form: UnknownForm
+======== Finished Transform RemoveReset ========
+
+======== Starting Transform CheckCombLoops ========
+---------------------------------------------------
+
+Time: 479.0 ms
+Form: LowForm
+======== Finished Transform CheckCombLoops ========
+
+======== Starting Transform RemoveWires ========
+------------------------------------------------
+
+Time: 145.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveWires ========
+
+------------------------------------------------------------
+
+Time: 1126.0 ms
+Form: LowForm
+======== Finished Transform MiddleFirrtlToLowFirrtl ========
+
+======== Starting Transform CustomLowFirrtlOpt ========
+======== Starting Transform RemoveValidIf$ ========
+---------------------------------------------------
+
+Time: 37.5 ms
+Form: UnknownForm
+======== Finished Transform RemoveValidIf$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 195.5 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 35.8 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform CustomVerilogMemDelays ========
+-----------------------------------------------------------
+
+Time: 75.5 ms
+Form: UnknownForm
+======== Finished Transform CustomVerilogMemDelays ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 30.7 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform SplitExpressions$ ========
+------------------------------------------------------
+
+Time: 30.1 ms
+Form: UnknownForm
+======== Finished Transform SplitExpressions$ ========
+
+======== Starting Transform CommonSubexpressionElimination$ ========
+--------------------------------------------------------------------
+
+Time: 34.9 ms
+Form: UnknownForm
+======== Finished Transform CommonSubexpressionElimination$ ========
+
+======== Starting Transform DeadCodeElimination ========
+--------------------------------------------------------
+
+Time: 213.7 ms
+Form: UnknownForm
+======== Finished Transform DeadCodeElimination ========
+
+-------------------------------------------------------
+
+Time: 697.6 ms
+Form: LowForm
+======== Finished Transform CustomLowFirrtlOpt ========
+
+======== Starting Transform BlackBoxSourceHelper ========
+---------------------------------------------------------
+
+Time: 2.3 ms
+Form: LowForm
+======== Finished Transform BlackBoxSourceHelper ========
+
+======== Starting Transform ReplaceMemsTransform ========
+[[35minfo[0m] [0.003] Elaborating design...
+[[35minfo[0m] [1.917] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 3.5 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 4.4 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 1.8 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 3.6 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 14.7 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 3.6 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 6.7 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 5.2 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 8.5 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 6.9 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 2.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 4.0 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 11.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.5 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 59.8 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 66.2 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 3.9 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 2.2 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 20.6 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 16.6 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 26.1 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 3.2 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 5.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 8.1 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 4.3 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 14.8 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.8 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 20.8 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 19.6 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 157.9 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.6 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 306.6 ms
+[[35minfo[0m] [0.000] Elaborating design...
+[[35minfo[0m] [0.249] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 3.5 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 4.3 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 2.2 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 5.0 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 16.4 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 1.1 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 1.4 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 11.9 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 3.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 6.6 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 4.0 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 13.2 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 3.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 6.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 3.4 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 9.4 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 67.8 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 35.8 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 2.0 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 4.0 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 3.2 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 8.1 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 36.6 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 15.8 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 2.0 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 3.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 7.5 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 2.8 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 11.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.4 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 12.8 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 12.1 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 136.5 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 259.3 ms
+[[35minfo[0m] [0.000] Elaborating design...
+[[35minfo[0m] [0.405] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 3.1 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 3.3 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 1.6 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 3.0 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 12.2 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 1.1 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 5.8 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 5.1 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 2.3 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 7.4 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 5.0 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 8.0 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 46.4 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 29.2 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 2.4 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 4.7 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 7.7 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 14.6 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 2.2 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 4.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 7.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 2.7 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 11.1 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.4 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 12.4 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 10.5 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 89.6 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 179.5 ms
+[[35minfo[0m] [0.000] Elaborating design...
+[[35minfo[0m] [0.235] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 4.7 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 3.6 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 1.9 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 3.4 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 14.9 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 4.4 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 4.7 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 30.3 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 4.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 3.0 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 7.4 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 4.8 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 2.3 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 7.0 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 72.9 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 22.9 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 1.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 3.7 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 7.3 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 14.6 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 3.1 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 5.4 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 8.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 2.7 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 10.2 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 12.6 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 14.3 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 92.7 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 209.5 ms
+[[35minfo[0m] [0.000] Elaborating design...
+[[35minfo[0m] [0.330] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 2.9 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 3.5 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 1.6 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 2.9 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 11.9 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 1.0 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 5.5 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 4.8 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 1.6 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 6.8 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 4.8 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 7.3 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 43.7 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 22.6 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 3.2 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 5.9 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 10.1 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 20.8 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 3.2 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 6.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 7.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 2.3 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 10.5 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 12.5 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 10.0 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 101.3 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 181.6 ms
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 44.3 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 59.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 54.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 40.5 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 72.1 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 32.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 51.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 10.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 37.7 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 96.3 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 9.3 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+---------------------------------------------------------
+
+Time: 5212.3 ms
+Form: HighForm
+======== Finished Transform ReplaceMemsTransform ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 6.9 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 7.5 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 46.4 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 31.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 93.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 27.3 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 64.9 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 23.1 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 85.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 6.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 14.6 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 62.1 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 9.7 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 474.9 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 182.3 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 5.4 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 5.3 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 9.6 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 17.2 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 40.7 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 30.0 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 7.3 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 12.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 34.8 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 8.9 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 4.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 45.9 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 5.2 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 49.5 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 38.5 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 323.0 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform SplitMuxConditions ========
+-------------------------------------------------------
+
+Time: 18.7 ms
+Form: MidForm
+======== Finished Transform SplitMuxConditions ========
+
+======== Starting Transform MiddleFirrtlToLowFirrtl ========
+======== Starting Transform LowerTypes$ ========
+------------------------------------------------
+
+Time: 267.3 ms
+Form: UnknownForm
+======== Finished Transform LowerTypes$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 14.4 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 40.2 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 4.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 76.3 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 5.4 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 7.2 ms
+Form: UnknownForm
+======== Finished Transform RemoveReset ========
+
+======== Starting Transform CheckCombLoops ========
+---------------------------------------------------
+
+Time: 254.2 ms
+Form: LowForm
+======== Finished Transform CheckCombLoops ========
+
+======== Starting Transform RemoveWires ========
+------------------------------------------------
+
+Time: 96.6 ms
+Form: UnknownForm
+======== Finished Transform RemoveWires ========
+
+------------------------------------------------------------
+
+Time: 774.1 ms
+Form: LowForm
+======== Finished Transform MiddleFirrtlToLowFirrtl ========
+
+======== Starting Transform ProfilingTransform ========
+======== Starting Transform FixupOps ========
+---------------------------------------------
+
+Time: 92.8 ms
+Form: LowForm
+======== Finished Transform FixupOps ========
+
+-------------------------------------------------------
+
+Time: 450.2 ms
+Form: LowForm
+======== Finished Transform ProfilingTransform ========
+
+======== Starting Transform WiringTransform ========
+======== Starting Transform Wiring ========
+-------------------------------------------
+
+Time: 740.7 ms
+Form: UnknownForm
+======== Finished Transform Wiring ========
+
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 5.5 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+----------------------------------------------------
+
+Time: 811.0 ms
+Form: UnknownForm
+======== Finished Transform WiringTransform ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 30.0 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 42.6 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 59.6 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 25.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 69.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 28.9 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 148.6 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 33.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 132.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 18.2 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 25.0 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 88.0 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 9.8 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 785.8 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 538.8 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 5.4 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 5.8 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 22.4 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 29.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 174.6 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 104.0 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 8.6 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 23.4 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 80.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 50.5 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 32.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 113.1 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 9.7 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 102.2 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 85.5 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 1058.9 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlToLowFirrtl ========
+======== Starting Transform LowerTypes$ ========
+------------------------------------------------
+
+Time: 381.2 ms
+Form: UnknownForm
+======== Finished Transform LowerTypes$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 26.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 66.8 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 13.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 116.2 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 10.5 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 4.0 ms
+Form: UnknownForm
+======== Finished Transform RemoveReset ========
+
+======== Starting Transform CheckCombLoops ========
+---------------------------------------------------
+
+Time: 326.7 ms
+Form: LowForm
+======== Finished Transform CheckCombLoops ========
+
+======== Starting Transform RemoveWires ========
+------------------------------------------------
+
+Time: 214.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveWires ========
+
+------------------------------------------------------------
+
+Time: 1237.6 ms
+Form: LowForm
+======== Finished Transform MiddleFirrtlToLowFirrtl ========
+
+======== Starting Transform AddMetaResetTransform ========
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 1.7 ms
+Form: LowForm
+======== Finished Transform RemoveReset ========
+
+----------------------------------------------------------
+
+Time: 153.9 ms
+Form: LowForm
+======== Finished Transform AddMetaResetTransform ========
+
+Total Custom FIRRTL Compile Time: 16853.3 ms
+Running transforms:
+  LowFirrtlOptimization
+  VerilogEmitter
+======== Starting Transform LowFirrtlOptimization ========
+======== Starting Transform RemoveValidIf$ ========
+---------------------------------------------------
+
+Time: 4.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveValidIf$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 79.0 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform PadWidths$ ========
+-----------------------------------------------
+
+Time: 43.3 ms
+Form: UnknownForm
+======== Finished Transform PadWidths$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 121.1 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 4.4 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform VerilogMemDelays$ ========
+------------------------------------------------------
+
+Time: 41.8 ms
+Form: UnknownForm
+======== Finished Transform VerilogMemDelays$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 138.2 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform SplitExpressions$ ========
+------------------------------------------------------
+
+Time: 20.7 ms
+Form: UnknownForm
+======== Finished Transform SplitExpressions$ ========
+
+======== Starting Transform CommonSubexpressionElimination$ ========
+--------------------------------------------------------------------
+
+Time: 219.3 ms
+Form: UnknownForm
+======== Finished Transform CommonSubexpressionElimination$ ========
+
+======== Starting Transform DeadCodeElimination ========
+--------------------------------------------------------
+
+Time: 319.0 ms
+Form: UnknownForm
+======== Finished Transform DeadCodeElimination ========
+
+----------------------------------------------------------
+
+Time: 1073.0 ms
+Form: LowForm
+======== Finished Transform LowFirrtlOptimization ========
+
+======== Starting Transform VerilogEmitter ========
+======== Starting Transform FlattenRegUpdate ========
+-----------------------------------------------------
+
+Time: 50.9 ms
+Form: LowForm
+======== Finished Transform FlattenRegUpdate ========
+
+======== Starting Transform DeadCodeElimination ========
+--------------------------------------------------------
+
+Time: 216.8 ms
+Form: LowForm
+======== Finished Transform DeadCodeElimination ========
+
+======== Starting Transform VerilogModulusCleanup$ ========
+-----------------------------------------------------------
+
+Time: 37.1 ms
+Form: UnknownForm
+======== Finished Transform VerilogModulusCleanup$ ========
+
+======== Starting Transform VerilogWrap$ ========
+-------------------------------------------------
+
+Time: 12.6 ms
+Form: UnknownForm
+======== Finished Transform VerilogWrap$ ========
+
+======== Starting Transform VerilogRename$ ========
+---------------------------------------------------
+
+Time: 23.0 ms
+Form: UnknownForm
+======== Finished Transform VerilogRename$ ========
+
+======== Starting Transform VerilogPrep$ ========
+-------------------------------------------------
+
+Time: 73.9 ms
+Form: UnknownForm
+======== Finished Transform VerilogPrep$ ========
+
+---------------------------------------------------
+
+Time: 1051.6 ms
+Form: LowForm
+======== Finished Transform VerilogEmitter ========
+
+Total Custom FIRRTL Compile Time: 2147.9 ms
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 46 s, completed Jul 8, 2019 11:38:27 AM[0m
+mv instrumentation/Sodor3Stage.toml /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_InstrumentationInfo.toml
+mv instrumentation/Sodor3Stage.lo.fir /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.lo.fir
+cd harness ;\
+sbt "run /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_InstrumentationInfo.toml /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.toml /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.e2e.toml"
+[0m[[0m[0minfo[0m] [0m[0mUpdated file /home/hut1si/gits/rfuzz2ndtry/harness/project/build.properties: set sbt.version to 1.2.8[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading project definition from /home/hut1si/gits/rfuzz2ndtry/harness/project[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ProjectRef(uri("file:/home/hut1si/gits/rfuzz2ndtry/harness/project/"), "harness-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mLoading settings for project harness from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mSet current project to harness (in build file:/home/hut1si/gits/rfuzz2ndtry/harness/)[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 5 Scala sources to /home/hut1si/gits/rfuzz2ndtry/harness/target/scala-2.11/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were 32 feature warnings; re-run with -feature for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/hut1si/gits/rfuzz2ndtry/harness/target/scala-2.11/harness_2.11-0.1.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0minfo[0m] [0m[0mRunning pynq.HarnessGenerator /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_InstrumentationInfo.toml /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.toml /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage.e2e.toml[0m
+Conf: DUTConfig(Sodor3Stage.v,Sodor3Stage,List(Input(io_imem_resp_bits_data,32), Input(io_imem_req_ready,1), Input(io_imem_resp_valid,1), Input(io_reset,1)),35,List(Port(func_cover_out,0), Port(assert_out,1), Port(auto_cover_out,746)),List(Coverage(assert_out,_GEN_388,0,Sodor3Stage.fir,2483,6,((((insn_ret + io_exception) <= 1) or reset) == 0)), Coverage(auto_cover_out,_GEN_1,0,Sodor3Stage.fir,450,6,io_cpu_req_valid), Coverage(auto_cover_out,_GEN_5,1,Sodor3Stage.fir,448,4,io_cpu_resp_ready), Coverage(auto_cover_out,_GEN_0,11,Sodor3Stage.fir,619,4,(4111 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_1,12,Sodor3Stage.fir,620,4,(273678451 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_2,13,Sodor3Stage.fir,621,4,(1048691 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_3,14,Sodor3Stage.fir,622,4,(2065694835 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_4,15,Sodor3Stage.fir,623,4,(807403635 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_5,16,Sodor3Stage.fir,624,4,(115 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_6,17,Sodor3Stage.fir,625,4,(28787 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_7,18,Sodor3Stage.fir,626,4,(12403 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_8,19,Sodor3Stage.fir,627,4,(8307 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_9,20,Sodor3Stage.fir,628,4,(4211 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_10,21,Sodor3Stage.fir,629,4,(24691 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_11,22,Sodor3Stage.fir,630,4,(20595 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_12,23,Sodor3Stage.fir,631,4,(24675 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_13,24,Sodor3Stage.fir,632,4,(16483 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_14,25,Sodor3Stage.fir,633,4,(28771 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_15,26,Sodor3Stage.fir,634,4,(20579 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_16,27,Sodor3Stage.fir,635,4,(4195 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_17,28,Sodor3Stage.fir,636,4,(99 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_18,29,Sodor3Stage.fir,637,4,(103 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_19,30,Sodor3Stage.fir,638,4,(111 == (io_imem_resp_bits_inst and 127))), Coverage(auto_cover_out,_GEN_20,31,Sodor3Stage.fir,639,4,(20531 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_21,32,Sodor3Stage.fir,640,4,(1073762355 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_22,33,Sodor3Stage.fir,641,4,(16435 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_23,34,Sodor3Stage.fir,642,4,(24627 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_24,35,Sodor3Stage.fir,643,4,(28723 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_25,36,Sodor3Stage.fir,644,4,(12339 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_26,37,Sodor3Stage.fir,645,4,(8243 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_27,38,Sodor3Stage.fir,646,4,(1073741875 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_28,39,Sodor3Stage.fir,647,4,(51 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_29,40,Sodor3Stage.fir,648,4,(4147 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_30,41,Sodor3Stage.fir,649,4,(20499 == (io_imem_resp_bits_inst and 4227887231))), Coverage(auto_cover_out,_GEN_31,42,Sodor3Stage.fir,650,4,(1073762323 == (io_imem_resp_bits_inst and 4227887231))), Coverage(auto_cover_out,_GEN_32,43,Sodor3Stage.fir,651,4,(4115 == (io_imem_resp_bits_inst and 4227887231))), Coverage(auto_cover_out,_GEN_33,44,Sodor3Stage.fir,652,4,(12307 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_34,45,Sodor3Stage.fir,653,4,(8211 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_35,46,Sodor3Stage.fir,654,4,(16403 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_36,47,Sodor3Stage.fir,655,4,(24595 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_37,48,Sodor3Stage.fir,656,4,(28691 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_38,49,Sodor3Stage.fir,657,4,(19 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_39,50,Sodor3Stage.fir,658,4,(55 == (io_imem_resp_bits_inst and 127))), Coverage(auto_cover_out,_GEN_40,51,Sodor3Stage.fir,659,4,(23 == (io_imem_resp_bits_inst and 127))), Coverage(auto_cover_out,_GEN_41,52,Sodor3Stage.fir,660,4,(4131 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_42,53,Sodor3Stage.fir,661,4,(35 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_43,54,Sodor3Stage.fir,662,4,(8227 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_44,55,Sodor3Stage.fir,663,4,(20483 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_45,56,Sodor3Stage.fir,664,4,(4099 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_46,57,Sodor3Stage.fir,665,4,(16387 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_47,58,Sodor3Stage.fir,666,4,(3 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_48,59,Sodor3Stage.fir,667,4,(8195 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_402,413,Sodor3Stage.fir,1322,4,(io_dat_br_eq == 0)), Coverage(auto_cover_out,_GEN_403,414,Sodor3Stage.fir,1324,4,io_dat_br_eq), Coverage(auto_cover_out,_GEN_404,415,Sodor3Stage.fir,1327,4,(io_dat_br_lt == 0)), Coverage(auto_cover_out,_GEN_405,416,Sodor3Stage.fir,1330,4,(io_dat_br_ltu == 0)), Coverage(auto_cover_out,_GEN_406,417,Sodor3Stage.fir,1332,4,io_dat_br_lt), Coverage(auto_cover_out,_GEN_407,418,Sodor3Stage.fir,1334,4,io_dat_br_ltu), Coverage(auto_cover_out,_GEN_408,419,Sodor3Stage.fir,1337,4,(cs_br_type == 8)), Coverage(auto_cover_out,_GEN_409,420,Sodor3Stage.fir,1338,4,(cs_br_type == 7)), Coverage(auto_cover_out,_GEN_410,421,Sodor3Stage.fir,1339,4,(cs_br_type == 6)), Coverage(auto_cover_out,_GEN_411,422,Sodor3Stage.fir,1340,4,(cs_br_type == 5)), Coverage(auto_cover_out,_GEN_412,423,Sodor3Stage.fir,1341,4,(cs_br_type == 4)), Coverage(auto_cover_out,_GEN_413,424,Sodor3Stage.fir,1342,4,(cs_br_type == 3)), Coverage(auto_cover_out,_GEN_414,425,Sodor3Stage.fir,1343,4,(cs_br_type == 2)), Coverage(auto_cover_out,_GEN_415,426,Sodor3Stage.fir,1344,4,(cs_br_type == 1)), Coverage(auto_cover_out,_GEN_416,427,Sodor3Stage.fir,1345,4,(cs_br_type == 0)), Coverage(auto_cover_out,_GEN_417,428,Sodor3Stage.fir,1346,4,take_evec), Coverage(auto_cover_out,_GEN_418,429,Sodor3Stage.fir,1371,4,csr_ren), Coverage(auto_cover_out,_GEN_425,436,,-1,-1,(io_imem_resp_valid == 0)), Coverage(auto_cover_out,_GEN_0,441,Sodor3Stage.fir,1397,4,io_fn[3:3]), Coverage(auto_cover_out,_GEN_1,442,Sodor3Stage.fir,1407,4,io_fn[1:1]), Coverage(auto_cover_out,_GEN_2,443,Sodor3Stage.fir,1408,4,(io_in1[31:31] == io_in2[31:31])), Coverage(auto_cover_out,_GEN_3,444,Sodor3Stage.fir,1463,4,((io_fn == 5) or (io_fn == 11))), Coverage(auto_cover_out,_GEN_4,445,Sodor3Stage.fir,1526,4,(io_fn == 4)), Coverage(auto_cover_out,_GEN_5,446,Sodor3Stage.fir,1527,4,(io_fn == 6)), Coverage(auto_cover_out,_GEN_6,447,Sodor3Stage.fir,1528,4,(io_fn == 7)), Coverage(auto_cover_out,_GEN_7,448,Sodor3Stage.fir,1539,4,(io_fn == 1)), Coverage(auto_cover_out,_GEN_9,450,Sodor3Stage.fir,1541,4,((io_fn == 12) or (io_fn == 14))), Coverage(auto_cover_out,_GEN_10,451,,-1,-1,((io_fn == 0) or (io_fn == 10))), Coverage(auto_cover_out,_GEN_7,454,Sodor3Stage.fir,2237,4,((io_rw_cmd == 2) or (io_rw_cmd == 3))), Coverage(auto_cover_out,_GEN_11,455,Sodor3Stage.fir,2240,4,(io_rw_cmd == 3)), Coverage(auto_cover_out,_GEN_15,456,Sodor3Stage.fir,2472,4,io_exception), Coverage(auto_cover_out,_GEN_150,460,Sodor3Stage.fir,2500,4,(insn_ret and (io_decode_csr[10:10] == 0))), Coverage(auto_cover_out,_GEN_154,464,Sodor3Stage.fir,2506,4,insn_call), Coverage(auto_cover_out,_GEN_156,466,Sodor3Stage.fir,2512,4,insn_break), Coverage(auto_cover_out,_GEN_157,467,Sodor3Stage.fir,2518,4,(io_decode_csr == 2816)), Coverage(auto_cover_out,_GEN_158,468,Sodor3Stage.fir,2519,4,(io_decode_csr == 2818)), Coverage(auto_cover_out,_GEN_159,469,Sodor3Stage.fir,2520,4,(io_decode_csr == 3859)), Coverage(auto_cover_out,_GEN_160,470,Sodor3Stage.fir,2523,4,(io_decode_csr == 769)), Coverage(auto_cover_out,_GEN_161,471,Sodor3Stage.fir,2524,4,(io_decode_csr == 768)), Coverage(auto_cover_out,_GEN_162,472,Sodor3Stage.fir,2525,4,(io_decode_csr == 773)), Coverage(auto_cover_out,_GEN_163,473,Sodor3Stage.fir,2526,4,(io_decode_csr == 836)), Coverage(auto_cover_out,_GEN_164,474,Sodor3Stage.fir,2527,4,(io_decode_csr == 772)), Coverage(auto_cover_out,_GEN_165,475,Sodor3Stage.fir,2528,4,(io_decode_csr == 832)), Coverage(auto_cover_out,_GEN_166,476,Sodor3Stage.fir,2529,4,(io_decode_csr == 833)), Coverage(auto_cover_out,_GEN_167,477,Sodor3Stage.fir,2530,4,(io_decode_csr == 835)), Coverage(auto_cover_out,_GEN_168,478,Sodor3Stage.fir,2531,4,(io_decode_csr == 834)), Coverage(auto_cover_out,_GEN_169,479,Sodor3Stage.fir,2532,4,(io_decode_csr == 3860)), Coverage(auto_cover_out,_GEN_170,480,Sodor3Stage.fir,2533,4,(io_decode_csr == 1968)), Coverage(auto_cover_out,_GEN_171,481,Sodor3Stage.fir,2534,4,(io_decode_csr == 1969)), Coverage(auto_cover_out,_GEN_172,482,Sodor3Stage.fir,2535,4,(io_decode_csr == 1970)), Coverage(auto_cover_out,_GEN_173,483,Sodor3Stage.fir,2536,4,(io_decode_csr == 770)), Coverage(auto_cover_out,_GEN_174,484,Sodor3Stage.fir,2537,4,(io_decode_csr == 2819)), Coverage(auto_cover_out,_GEN_175,485,Sodor3Stage.fir,2538,4,(io_decode_csr == 2947)), Coverage(auto_cover_out,_GEN_176,486,Sodor3Stage.fir,2539,4,(io_decode_csr == 2820)), Coverage(auto_cover_out,_GEN_177,487,Sodor3Stage.fir,2540,4,(io_decode_csr == 2948)), Coverage(auto_cover_out,_GEN_178,488,Sodor3Stage.fir,2541,4,(io_decode_csr == 2821)), Coverage(auto_cover_out,_GEN_179,489,Sodor3Stage.fir,2542,4,(io_decode_csr == 2949)), Coverage(auto_cover_out,_GEN_180,490,Sodor3Stage.fir,2543,4,(io_decode_csr == 2822)), Coverage(auto_cover_out,_GEN_181,491,Sodor3Stage.fir,2544,4,(io_decode_csr == 2950)), Coverage(auto_cover_out,_GEN_182,492,Sodor3Stage.fir,2545,4,(io_decode_csr == 2823)), Coverage(auto_cover_out,_GEN_183,493,Sodor3Stage.fir,2546,4,(io_decode_csr == 2951)), Coverage(auto_cover_out,_GEN_184,494,Sodor3Stage.fir,2547,4,(io_decode_csr == 2824)), Coverage(auto_cover_out,_GEN_185,495,Sodor3Stage.fir,2548,4,(io_decode_csr == 2952)), Coverage(auto_cover_out,_GEN_186,496,Sodor3Stage.fir,2549,4,(io_decode_csr == 2825)), Coverage(auto_cover_out,_GEN_187,497,Sodor3Stage.fir,2550,4,(io_decode_csr == 2953)), Coverage(auto_cover_out,_GEN_188,498,Sodor3Stage.fir,2551,4,(io_decode_csr == 2826)), Coverage(auto_cover_out,_GEN_189,499,Sodor3Stage.fir,2552,4,(io_decode_csr == 2954)), Coverage(auto_cover_out,_GEN_190,500,Sodor3Stage.fir,2553,4,(io_decode_csr == 2827)), Coverage(auto_cover_out,_GEN_191,501,Sodor3Stage.fir,2554,4,(io_decode_csr == 2955)), Coverage(auto_cover_out,_GEN_192,502,Sodor3Stage.fir,2555,4,(io_decode_csr == 2828)), Coverage(auto_cover_out,_GEN_193,503,Sodor3Stage.fir,2556,4,(io_decode_csr == 2956)), Coverage(auto_cover_out,_GEN_194,504,Sodor3Stage.fir,2557,4,(io_decode_csr == 2829)), Coverage(auto_cover_out,_GEN_195,505,Sodor3Stage.fir,2558,4,(io_decode_csr == 2957)), Coverage(auto_cover_out,_GEN_196,506,Sodor3Stage.fir,2559,4,(io_decode_csr == 2830)), Coverage(auto_cover_out,_GEN_197,507,Sodor3Stage.fir,2560,4,(io_decode_csr == 2958)), Coverage(auto_cover_out,_GEN_198,508,Sodor3Stage.fir,2561,4,(io_decode_csr == 2831)), Coverage(auto_cover_out,_GEN_199,509,Sodor3Stage.fir,2562,4,(io_decode_csr == 2959)), Coverage(auto_cover_out,_GEN_200,510,Sodor3Stage.fir,2563,4,(io_decode_csr == 2832)), Coverage(auto_cover_out,_GEN_201,511,Sodor3Stage.fir,2564,4,(io_decode_csr == 2960)), Coverage(auto_cover_out,_GEN_202,512,Sodor3Stage.fir,2565,4,(io_decode_csr == 2833)), Coverage(auto_cover_out,_GEN_203,513,Sodor3Stage.fir,2566,4,(io_decode_csr == 2961)), Coverage(auto_cover_out,_GEN_204,514,Sodor3Stage.fir,2567,4,(io_decode_csr == 2834)), Coverage(auto_cover_out,_GEN_205,515,Sodor3Stage.fir,2568,4,(io_decode_csr == 2962)), Coverage(auto_cover_out,_GEN_206,516,Sodor3Stage.fir,2569,4,(io_decode_csr == 2835)), Coverage(auto_cover_out,_GEN_207,517,Sodor3Stage.fir,2570,4,(io_decode_csr == 2963)), Coverage(auto_cover_out,_GEN_208,518,Sodor3Stage.fir,2571,4,(io_decode_csr == 2836)), Coverage(auto_cover_out,_GEN_209,519,Sodor3Stage.fir,2572,4,(io_decode_csr == 2964)), Coverage(auto_cover_out,_GEN_210,520,Sodor3Stage.fir,2573,4,(io_decode_csr == 2837)), Coverage(auto_cover_out,_GEN_211,521,Sodor3Stage.fir,2574,4,(io_decode_csr == 2965)), Coverage(auto_cover_out,_GEN_212,522,Sodor3Stage.fir,2575,4,(io_decode_csr == 2838)), Coverage(auto_cover_out,_GEN_213,523,Sodor3Stage.fir,2576,4,(io_decode_csr == 2966)), Coverage(auto_cover_out,_GEN_214,524,Sodor3Stage.fir,2577,4,(io_decode_csr == 2839)), Coverage(auto_cover_out,_GEN_215,525,Sodor3Stage.fir,2578,4,(io_decode_csr == 2967)), Coverage(auto_cover_out,_GEN_216,526,Sodor3Stage.fir,2579,4,(io_decode_csr == 2840)), Coverage(auto_cover_out,_GEN_217,527,Sodor3Stage.fir,2580,4,(io_decode_csr == 2968)), Coverage(auto_cover_out,_GEN_218,528,Sodor3Stage.fir,2581,4,(io_decode_csr == 2841)), Coverage(auto_cover_out,_GEN_219,529,Sodor3Stage.fir,2582,4,(io_decode_csr == 2969)), Coverage(auto_cover_out,_GEN_220,530,Sodor3Stage.fir,2583,4,(io_decode_csr == 2842)), Coverage(auto_cover_out,_GEN_221,531,Sodor3Stage.fir,2584,4,(io_decode_csr == 2970)), Coverage(auto_cover_out,_GEN_222,532,Sodor3Stage.fir,2585,4,(io_decode_csr == 2843)), Coverage(auto_cover_out,_GEN_223,533,Sodor3Stage.fir,2586,4,(io_decode_csr == 2971)), Coverage(auto_cover_out,_GEN_224,534,Sodor3Stage.fir,2587,4,(io_decode_csr == 2844)), Coverage(auto_cover_out,_GEN_225,535,Sodor3Stage.fir,2588,4,(io_decode_csr == 2972)), Coverage(auto_cover_out,_GEN_226,536,Sodor3Stage.fir,2589,4,(io_decode_csr == 2845)), Coverage(auto_cover_out,_GEN_227,537,Sodor3Stage.fir,2590,4,(io_decode_csr == 2973)), Coverage(auto_cover_out,_GEN_228,538,Sodor3Stage.fir,2591,4,(io_decode_csr == 2846)), Coverage(auto_cover_out,_GEN_229,539,Sodor3Stage.fir,2592,4,(io_decode_csr == 2974)), Coverage(auto_cover_out,_GEN_230,540,Sodor3Stage.fir,2593,4,(io_decode_csr == 2847)), Coverage(auto_cover_out,_GEN_231,541,Sodor3Stage.fir,2594,4,(io_decode_csr == 2975)), Coverage(auto_cover_out,_GEN_232,542,Sodor3Stage.fir,2595,4,(io_decode_csr == 2848)), Coverage(auto_cover_out,_GEN_233,543,Sodor3Stage.fir,2596,4,(io_decode_csr == 2976)), Coverage(auto_cover_out,_GEN_234,544,Sodor3Stage.fir,2597,4,(io_decode_csr == 2849)), Coverage(auto_cover_out,_GEN_235,545,Sodor3Stage.fir,2598,4,(io_decode_csr == 2977)), Coverage(auto_cover_out,_GEN_236,546,Sodor3Stage.fir,2599,4,(io_decode_csr == 2850)), Coverage(auto_cover_out,_GEN_237,547,Sodor3Stage.fir,2600,4,(io_decode_csr == 2978)), Coverage(auto_cover_out,_GEN_309,619,Sodor3Stage.fir,3210,6,(io_decode_csr == 2944)), Coverage(auto_cover_out,_GEN_313,623,Sodor3Stage.fir,3225,6,(io_decode_csr == 2946)), Coverage(auto_cover_out,_GEN_324,634,Sodor3Stage.fir,2690,4,wen), Coverage(auto_cover_out,_GEN_0,698,Sodor3Stage.fir,3404,4,imm_j[19:19]), Coverage(auto_cover_out,_GEN_1,699,Sodor3Stage.fir,3399,4,imm_b[11:11]), Coverage(auto_cover_out,_GEN_2,700,Sodor3Stage.fir,3435,4,io_ctl_brjmp_sel), Coverage(auto_cover_out,_GEN_3,701,Sodor3Stage.fir,3327,4,(io_ctl_pc_sel == 3)), Coverage(auto_cover_out,_GEN_4,702,Sodor3Stage.fir,3663,4,(wb_reg_ctrl_wb_sel == 3)), Coverage(auto_cover_out,_GEN_5,703,Sodor3Stage.fir,3664,4,(wb_reg_ctrl_wb_sel == 2)), Coverage(auto_cover_out,_GEN_6,704,Sodor3Stage.fir,3665,4,(wb_reg_ctrl_wb_sel == 1)), Coverage(auto_cover_out,_GEN_7,705,Sodor3Stage.fir,3363,4,(exe_rs1_addr != 0)), Coverage(auto_cover_out,_GEN_8,706,Sodor3Stage.fir,3366,4,(exe_rs2_addr != 0)), Coverage(auto_cover_out,_GEN_9,707,Sodor3Stage.fir,3391,4,imm_i[11:11]), Coverage(auto_cover_out,_GEN_10,708,Sodor3Stage.fir,3395,4,imm_s[11:11]), Coverage(auto_cover_out,_GEN_11,709,Sodor3Stage.fir,3412,4,((((wb_reg_wbaddr == exe_rs1_addr) and (exe_rs1_addr != 0)) and wb_reg_ctrl_rf_wen) and wb_reg_ctrl_bypassable)), Coverage(auto_cover_out,_GEN_13,711,Sodor3Stage.fir,3421,4,(io_ctl_op1_sel == 1)), Coverage(auto_cover_out,_GEN_14,712,Sodor3Stage.fir,3426,4,(io_ctl_op2_sel == 2)), Coverage(auto_cover_out,_GEN_15,713,Sodor3Stage.fir,3427,4,(io_ctl_op2_sel == 3)), Coverage(auto_cover_out,_GEN_16,714,Sodor3Stage.fir,3348,4,(wb_reg_ctrl_wb_sel == 0)), Coverage(auto_cover_out,_GEN_23,721,,-1,-1,(io_ctl_op1_sel == 2)), Coverage(auto_cover_out,_GEN_0,722,Sodor3Stage.fir,3773,4,io_dw_en), Coverage(auto_cover_out,_GEN_4,726,,-1,-1,1), Coverage(auto_cover_out,_GEN_0,738,Sodor3Stage.fir,3888,4,(sync_data).io_dataInstr_0_data[7:7]), Coverage(auto_cover_out,_GEN_1,739,Sodor3Stage.fir,3894,4,(sync_data).io_dataInstr_0_data[15:15]), Coverage(auto_cover_out,_GEN_5,743,Sodor3Stage.fir,3929,6,(io_core_ports_0_req_bits_typ == 2))),192)
+[[35minfo[0m] [0.001] Elaborating design...
+coverage_byte_count: 198
+input_byte_count: 8
+coverage width: 1536
+[[35minfo[0m] [0.968] Done elaborating.
+Total FIRRTL Compile Time: 3908.0 ms
+[[35minfo[0m] [0.000] Elaborating design...
+coverage_byte_count: 198
+input_byte_count: 8
+coverage width: 1536
+[[35minfo[0m] [0.511] Done elaborating.
+Total FIRRTL Compile Time: 1738.8 ms
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 39 s, completed Jul 8, 2019 11:39:32 AM[0m
+mv harness/VerilatorHarness.v /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_VHarness.v
+mv harness/E2ECoverageHarness.v /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_E2EHarness.v
+mkdir -p /home/hut1si/gits/rfuzz2ndtry/build/vSodor3Stage
+cd /home/hut1si/gits/rfuzz2ndtry/build/vSodor3Stage && meson ../../verilator --buildtype=release \
+                         -Dtrace=false -Dbuild_dir='/home/hut1si/gits/rfuzz2ndtry/build' -Ddut='Sodor3Stage' \
+                      && ninja
+The Meson build system
+Version: 0.50.1
+Source dir: /home/hut1si/gits/rfuzz2ndtry/verilator
+Build dir: /home/hut1si/gits/rfuzz2ndtry/build/vSodor3Stage
+Build type: native build
+Project name: fuzz-server
+Project version: 0.0.1
+Native C++ compiler: c++ (gcc 5.5.0 "c++ (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program verilator.py found: YES (/home/hut1si/gits/rfuzz2ndtry/verilator/verilator.py)
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Dependency verilator found: YES 4.011 devel
+Program dut_gen.py found: YES (/home/hut1si/gits/rfuzz2ndtry/verilator/dut_gen.py)
+Build targets in project: 4
+Found ninja-1.5.1 at /usr/bin/ninja
+[1/10] Generating verilator with a custom command.
+[2/10] Generating dut_hpp with a custom command.
+%Warning-PINMISSING: /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_valid
+%Warning-PINMISSING: Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_addr
+%Warning-PINMISSING: /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_data
+%Warning-PINMISSING: /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_fcn
+%Warning-PINMISSING: /home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_typ
+[3/10] Compiling C++ object 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o'.
+[4/10] Compiling C++ object 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o'.
+[5/10] Compiling C++ object 'sim@sta/meson-generated_.._verilated.cpp.o'.
+FAILED: c++ -Isim@sta -I. -I../../verilator -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o' -MF 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o.d' -o 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o' -c VSodor3Stage_VHarness.cpp
+c++: error: unrecognized command line option ‘-faligned-new’
+FAILED: c++ -Isim@sta -I. -I../../verilator -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o' -MF 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o.d' -o 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o' -c VSodor3Stage_VHarness__Syms.cpp
+c++: error: unrecognized command line option ‘-faligned-new’
+FAILED: c++ -Isim@sta -I. -I../../verilator -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._verilated.cpp.o' -MF 'sim@sta/meson-generated_.._verilated.cpp.o.d' -o 'sim@sta/meson-generated_.._verilated.cpp.o' -c verilated.cpp
+c++: error: unrecognized command line option ‘-faligned-new’
+ninja: build stopped: subcommand failed.
+Makefile:98: recipe for target '/home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_server' failed
+make: *** [/home/hut1si/gits/rfuzz2ndtry/build/Sodor3Stage_server] Error 1

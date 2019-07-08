@@ -1,0 +1,1 @@
+{"rustc":1507140671165215838,"features":"[]","target":17302863824343899356,"profile":5060393583489210841,"path":3597861008984751080,"deps":[["lazy_static v1.3.0","lazy_static",5823247787119162913],["winconsole v0.10.0","winconsole",8835503261084852645]],"local":[{"Precalculated":"1.8.0"}],"rustflags":[],"edition":"Edition2015"}

@@ -1,0 +1,1 @@
+[{"name": "verilator", "link_args": [], "compile_args": ["-I/usr/local/share/verilator/include", "-I/usr/local/share/verilator/include/vltstd"]}]

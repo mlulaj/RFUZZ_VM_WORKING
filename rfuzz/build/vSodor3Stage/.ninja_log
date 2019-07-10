@@ -24,3 +24,11 @@
 104	1481	1562786971	server@exe/fpga_queue.cpp.o	f99f4acc305a133c
 104	1566	1562786972	server@exe/top.cpp.o	65c1ae4ff71d9862
 1566	1638	1562786972	server	31a18916e1431e33
+1	789	1562789479	sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o	b29ae773ad084b75
+789	2487	1562789481	sim@sta/meson-generated_.._verilated_vcd_c.cpp.o	489b9978aeaea6b3
+2487	7289	1562789485	sim@sta/meson-generated_.._verilated.cpp.o	7d62297678a028ad
+7289	9214	1562789487	server@exe/top.cpp.o	65c1ae4ff71d9862
+9215	11135	1562789489	server@exe/fpga_queue.cpp.o	f99f4acc305a133c
+0	39160	1562789517	sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o	4ce49b34807c79bc
+39160	39177	1562789517	libsim.a	f7ae1dc92848616
+39177	39275	1562789517	server	31a18916e1431e33

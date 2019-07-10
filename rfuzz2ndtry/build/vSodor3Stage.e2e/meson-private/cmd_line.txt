@@ -1,8 +1,0 @@
-[options]
-buildtype = release
-build_dir = /home/hut1si/gits/rfuzz2ndtry/build
-trace = false
-dut = Sodor3Stage
-
-[properties]
-

@@ -1,0 +1,9 @@
+# build artifacts
+project/
+target/
+test_run_dir/
+
+*.v
+*.fir
+*.anno
+*.f

@@ -1,0 +1,10 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+
+# Jack's Scala Style
+
+[*.scala]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 2

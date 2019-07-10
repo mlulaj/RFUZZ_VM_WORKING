@@ -1,0 +1,7 @@
+# analysis artifacts
+*.dot
+*.png
+*.pdf
+
+# launch.py
+*.out

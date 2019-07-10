@@ -1,0 +1,29 @@
+Build started at 2019-07-10T21:15:07.276298
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.45.1
+Source dir: /home/mustafa/Desktop/rfuzz/verilator
+Build dir: /home/mustafa/Desktop/rfuzz/build/vSodor3Stage
+Build type: native build
+Project name: fuzz-server
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/mustafa/Desktop/rfuzz/build/vSodor3Stage/meson-private/sanitycheckcpp.cc -o /home/mustafa/Desktop/rfuzz/build/vSodor3Stage/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/mustafa/Desktop/rfuzz/build/vSodor3Stage/meson-private/sanitycheckcpp.exe
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program verilator.py found: YES (/home/mustafa/Desktop/rfuzz/verilator/verilator.py)
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'verilator' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency verilator found: YES 3.916 2017-11-25
+Program dut_gen.py found: YES (/home/mustafa/Desktop/rfuzz/verilator/dut_gen.py)
+Build targets in project: 4
+Found ninja-1.8.2 at /usr/bin/ninja

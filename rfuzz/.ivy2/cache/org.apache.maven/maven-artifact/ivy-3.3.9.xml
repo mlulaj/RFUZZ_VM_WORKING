@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.apache.maven"
+		module="maven-artifact"
+		revision="3.3.9"
+		status="release"
+		publication="20151110173925"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="" />
+		<m:properties__javaVersion>6</m:properties__javaVersion>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__scope>provided</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__scope>
+		<m:dependency.management__org.apache.maven.wagon__wagon-file__version>2.10</m:dependency.management__org.apache.maven.wagon__wagon-file__version>
+		<m:properties__maven.test.redirectTestOutputToFile>true</m:properties__maven.test.redirectTestOutputToFile>
+		<m:properties__checkstyle.excludes>**/package-info.java</m:properties__checkstyle.excludes>
+		<m:dependency.management__org.apache.maven__maven-model__version>3.3.9</m:dependency.management__org.apache.maven__maven-model__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.0.7</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__org.apache.maven__maven-artifact__version>3.3.9</m:dependency.management__org.apache.maven__maven-artifact__version>
+		<m:properties__plexusVersion>1.6</m:properties__plexusVersion>
+		<m:properties__classWorldsVersion>2.5.2</m:properties__classWorldsVersion>
+		<m:properties__guavaVersion>18.0</m:properties__guavaVersion>
+		<m:properties__maven.version>3.0.5</m:properties__maven.version>
+		<m:properties__distributionName>Apache Maven</m:properties__distributionName>
+		<m:dependency.management__org.apache.maven__maven-settings__version>3.3.9</m:dependency.management__org.apache.maven__maven-settings__version>
+		<m:properties__commonsLangVersion>3.4</m:properties__commonsLangVersion>
+		<m:dependency.management__com.google.inject__guice__version>4.0</m:dependency.management__com.google.inject__guice__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.5</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__commons-cli__commons-cli__version>1.2</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__org.eclipse.aether__aether-impl__version>1.0.2.v20150114</m:dependency.management__org.eclipse.aether__aether-impl__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.4</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:dependency.management__commons-jxpath__commons-jxpath__version>1.3</m:dependency.management__commons-jxpath__commons-jxpath__version>
+		<m:properties__commonsCliVersion>1.2</m:properties__commonsCliVersion>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:dependency.management__org.apache.maven__maven-core__version>3.3.9</m:dependency.management__org.apache.maven__maven-core__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.5</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>3.3.9</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:properties__guiceVersion>4.0</m:properties__guiceVersion>
+		<m:dependency.management__org.eclipse.aether__aether-spi__version>1.0.2.v20150114</m:dependency.management__org.eclipse.aether__aether-spi__version>
+		<m:dependency.management__org.apache.maven.wagon__wagon-http__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.maven.wagon__wagon-http__exclusion_0>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>3.4</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-component-annotations__exclusion_0>junit__junit</m:dependency.management__org.codehaus.plexus__plexus-component-annotations__exclusion_0>
+		<m:properties__distributionId>apache-maven</m:properties__distributionId>
+		<m:properties__cipherVersion>1.7</m:properties__cipherVersion>
+		<m:dependency.management__org.codehaus.plexus__plexus-classworlds__version>2.5.2</m:dependency.management__org.codehaus.plexus__plexus-classworlds__version>
+		<m:dependency.management__org.apache.maven.wagon__wagon-http__version>2.10</m:dependency.management__org.apache.maven.wagon__wagon-http__version>
+		<m:dependency.management__org.apache.maven.wagon__wagon-provider-api__version>2.10</m:dependency.management__org.apache.maven.wagon__wagon-provider-api__version>
+		<m:properties__securityDispatcherVersion>1.3</m:properties__securityDispatcherVersion>
+		<m:dependency.management__org.apache.maven__maven-builder-support__version>3.3.9</m:dependency.management__org.apache.maven__maven-builder-support__version>
+		<m:properties__checkstyle.violation.ignore>RedundantThrows,NewlineAtEndOfFile,ParameterNumber,MethodLength,FileLength,JavadocType,MagicNumber,InnerAssignment,MethodName</m:properties__checkstyle.violation.ignore>
+		<m:dependency.management__org.eclipse.aether__aether-util__version>1.0.2.v20150114</m:dependency.management__org.eclipse.aether__aether-util__version>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:properties__jxpathVersion>1.3</m:properties__jxpathVersion>
+		<m:dependency.management__org.codehaus.plexus__plexus-interpolation__version>1.21</m:dependency.management__org.codehaus.plexus__plexus-interpolation__version>
+		<m:properties__plexusUtilsVersion>3.0.22</m:properties__plexusUtilsVersion>
+		<m:properties__junitVersion>4.11</m:properties__junitVersion>
+		<m:dependency.management__org.codehaus.plexus__plexus-component-annotations__version>1.6</m:dependency.management__org.codehaus.plexus__plexus-component-annotations__version>
+		<m:properties__modelloVersion>1.8.3</m:properties__modelloVersion>
+		<m:dependency.management__commons-cli__commons-cli__exclusion_1>commons-lang__commons-lang</m:dependency.management__commons-cli__commons-cli__exclusion_1>
+		<m:dependency.management__org.sonatype.plexus__plexus-sec-dispatcher__version>1.3</m:dependency.management__org.sonatype.plexus__plexus-sec-dispatcher__version>
+		<m:dependency.management__org.apache.maven__maven-model-builder__version>3.3.9</m:dependency.management__org.apache.maven__maven-model-builder__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>3.0.22</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__commons-cli__commons-cli__exclusion_0>commons-logging__commons-logging</m:dependency.management__commons-cli__commons-cli__exclusion_0>
+		<m:dependency.management__org.apache.maven__maven-settings-builder__version>3.3.9</m:dependency.management__org.apache.maven__maven-settings-builder__version>
+		<e:sbtTransformHash>9cfc470bf6305a81b7645112d729672334ed4c4b</e:sbtTransformHash>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__maven.site.cache>${user.home}/maven-sites</m:properties__maven.site.cache>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__1.14|org.apache.maven.plugins__maven-doap-plugin__1.1|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__1.14|org.apache.maven.plugins__maven-doap-plugin__1.1|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.plexus__plexus-component-metadata__null|org.apache.maven.plugins__maven-jar-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.maven__maven-compat__version>3.3.9</m:dependency.management__org.apache.maven__maven-compat__version>
+		<m:dependency.management__org.eclipse.sisu__org.eclipse.sisu.plexus__version>0.3.2</m:dependency.management__org.eclipse.sisu__org.eclipse.sisu.plexus__version>
+		<m:properties__plexusInterpolationVersion>1.21</m:properties__plexusInterpolationVersion>
+		<m:dependency.management__com.google.guava__guava__version>18.0</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.eclipse.aether__aether-connector-basic__version>1.0.2.v20150114</m:dependency.management__org.eclipse.aether__aether-connector-basic__version>
+		<m:properties__aetherVersion>1.0.2.v20150114</m:properties__aetherVersion>
+		<m:dependency.management__org.apache.maven__maven-aether-provider__version>3.3.9</m:dependency.management__org.apache.maven__maven-aether-provider__version>
+		<m:dependency.management__org.apache.maven__maven-embedder__version>3.3.9</m:dependency.management__org.apache.maven__maven-embedder__version>
+		<m:properties__maven.site.path>ref/3-LATEST</m:properties__maven.site.path>
+		<m:dependency.management__org.apache.maven__maven-repository-metadata__version>3.3.9</m:dependency.management__org.apache.maven__maven-repository-metadata__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.sonatype.plexus__plexus-cipher__version>1.7</m:dependency.management__org.sonatype.plexus__plexus-cipher__version>
+		<m:dependency.management__org.eclipse.aether__aether-api__version>1.0.2.v20150114</m:dependency.management__org.eclipse.aether__aether-api__version>
+		<m:properties__wagonVersion>2.10</m:properties__wagonVersion>
+		<m:properties__distributionShortName>Maven</m:properties__distributionShortName>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:dependency.management__org.eclipse.aether__aether-transport-wagon__version>1.0.2.v20150114</m:dependency.management__org.eclipse.aether__aether-transport-wagon__version>
+		<m:properties__sisuInjectVersion>0.3.2</m:properties__sisuInjectVersion>
+		<m:properties__slf4jVersion>1.7.5</m:properties__slf4jVersion>
+		<m:properties__mavenPluginToolsVersion>3.4</m:properties__mavenPluginToolsVersion>
+		<m:properties__sonar.host.url>https://analysis.apache.org/</m:properties__sonar.host.url>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="maven-artifact" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.codehaus.plexus" name="plexus-utils" rev="3.0.22" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.apache.commons" name="commons-lang3" rev="3.4" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(compile)"/>
+	</dependencies>
+</ivy-module>

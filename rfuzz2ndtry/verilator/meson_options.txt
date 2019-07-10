@@ -1,3 +1,0 @@
-option('trace', type: 'boolean', value: false)
-option('build_dir', type: 'string', value: '../build')
-option('dut', type: 'string', value: 'nan')

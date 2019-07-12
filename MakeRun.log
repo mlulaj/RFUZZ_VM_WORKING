@@ -1,0 +1,2908 @@
+cd firrtl ;\
+  sbt -ivy /home/mustafa/Desktop/test/rfuzz/.ivy2 publishLocal && touch /home/mustafa/Desktop/test/rfuzz/firrtl.stamp
+Loading settings from plugins.sbt ... 
+Loading project definition from /home/mustafa/Desktop/test/rfuzz/firrtl/project 
+:Updating ProjectRef(uri("file:/home/mustafa/Desktop/test/rfuzz/firrtl/project/"), "firrtl-build")... 
+:Done updating. 
+:Found version conflict(s) in library dependencies; some are suspected to be binary incompatible: 
+:	* org.ow2.asm:asm-tree:6.0 is selected over 5.0.3 
+:	    +- org.ow2.asm:asm-commons:6.0                        (depends on 6.0) 
+:	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3) 
+:	    +- org.ow2.asm:asm-util:5.0.3                         (depends on 5.0.3) 
+:	    +- org.ow2.asm:asm-analysis:5.0.3                     (depends on 5.0.3) 
+:	* org.ow2.asm:asm:6.0 is selected over 5.0.3 
+:	    +- org.pantsbuild:jarjar:1.6.5                        (depends on 6.0) 
+:	    +- org.ow2.asm:asm-tree:6.0                           (depends on 6.0) 
+:	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3) 
+:	    +- org.ow2.asm:asm-tree:5.0.3                         (depends on 5.0.3) 
+:Run 'evicted' to see detailed eviction warnings 
+:Loading settings from build.sbt ... 
+:Set current project to firrtl (in build file:/home/mustafa/Desktop/test/rfuzz/firrtl/) 
+:Packaging /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT-sources.jar ... 
+:Done packaging. 
+:Wrote /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT.pom 
+:Updating ... 
+:Done updating. 
+:Compiling 84 Scala sources and 4 Java sources to /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/classes ... 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/Driver.scala:93:40: method getAnnotationFileName in class FirrtlExecutionOptions is deprecated: Use FirrtlOptions.annotationFileNames instead 
+:    val oldAnnoFileName = firrtlConfig.getAnnotationFileName(optionsManager) 
+:                                       ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/Parser.scala:33:41: class ANTLRInputStream in package runtime is deprecated: see corresponding Javadoc for more information. 
+:        val lexer = new FIRRTLLexer(new ANTLRInputStream(inStream)) 
+:                                        ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/passes/memlib/ReplaceMemMacros.scala:217:68: method getMyAnnotations in class Transform is deprecated: Just collect the actual Annotation types the transform wants 
+:      case _ => throwInternalError(s"execute: getMyAnnotations - ${getMyAnnotations(state)}") 
+:                                                                   ^ 
+:there were 32 feature warnings; re-run with -feature for details 
+:four warnings found 
+:bootstrap class path not set in conjunction with -source 1.7 
+:Done compiling. 
+:Main Scala API documentation to /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/unidoc... 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/passes/ExpandWhens.scala:71:5: discarding unmoored doc comment 
+:    /** Removes connections/attaches from the statement 
+:    ^ 
+:there were 32 feature warnings; re-run with -feature for details 
+model contains 560 documentable templates
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/transforms/CheckCombLoops.scala:27:1: Could not find any member to link for "CombLoopException". 
+:/** Finds and detects combinational logic loops in a circuit, if any 
+:^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/graph/DiGraph.scala:349:3: Could not find any member to link for "IllegalArgumentException". 
+:  /** Add edge (u,v) to the graph. 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/graph/DiGraph.scala:300:3: Could not find any member to link for "IllegalArgumentException". 
+:  /** Return a simplified connectivity graph with only a subset of the nodes 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/graph/DiGraph.scala:287:3: Could not find any member to link for "IllegalArgumentException". 
+:  /** Return a graph with only a subset of the nodes 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/tutorial/lesson2-working-ir/AnalyzeCircuit.scala:64:1: Could not find any member to link for "ToWorkingIR". 
+:/** AnalyzeCircuit Transform 
+:^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/tutorial/lesson1-circuit-traversal/AnalyzeCircuit.scala:48:1: Could not find any member to link for "Circuit". 
+:/** AnalyzeCircuit Transform 
+:^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/tutorial/lesson1-circuit-traversal/AnalyzeCircuit.scala:15:1: Could not find any member to link for "Mux". 
+:/** Ledger tracks [[firrtl.ir.Circuit]] statistics 
+:^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/transforms/FlattenRegUpdate.scala:14:3: Could not find any member to link for "Expression". 
+:  /** Mapping from references to the [[Expression]]s that drive them */ 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/transforms/FlattenRegUpdate.scala:17:3: Could not find any member to link for "Module". 
+:  /** Build a [[Netlist]] from a Module's connections and Nodes 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/transforms/FlattenRegUpdate.scala:41:3: Could not find any member to link for "Module". 
+:  /** Flatten Register Updates 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/passes/RemoveValidIf.scala:18:3: Could not find any member to link for "Expression". 
+:  /** Returns an [[Expression]] equal to zero for a given [[GroundType]] 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/analyses/InstanceGraph.scala:78:3: Could not find any member to link for "EulerTour". 
+:  /** An `[[EulerTour]]` representation of the `[[DiGraph]]` */ 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/Compiler.scala:53:3: Could not find any member to link for "ComponentName". 
+:  /** Get renames of a [[ComponentName]] 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/Compiler.scala:38:3: Could not find any member to link for "ModuleName". 
+:  /** Get renames of a [[ModuleName]] 
+:  ^ 
+:/home/mustafa/Desktop/test/rfuzz/firrtl/src/main/scala/firrtl/Compiler.scala:31:3: Could not find any member to link for "CircuitName". 
+:  /** Get renames of a [[CircuitName]] 
+:  ^ 
+:17 warnings found 
+:Main Scala API documentation successful. 
+:Packaging /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT-javadoc.jar ... 
+:Done packaging. 
+:Packaging /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/firrtl_2.11-1.2-SNAPSHOT.jar ... 
+:Done packaging. 
+::: delivering :: edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT :: 1.2-SNAPSHOT :: integration :: Fri Jul 12 08:55:31 CEST 2019 
+:	delivering ivy file to /home/mustafa/Desktop/test/rfuzz/firrtl/target/scala-2.11/ivy-1.2-SNAPSHOT.xml 
+:	published firrtl_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/poms/firrtl_2.11.pom 
+:	published firrtl_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/jars/firrtl_2.11.jar 
+:	published firrtl_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/srcs/firrtl_2.11-sources.jar 
+:	published firrtl_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/docs/firrtl_2.11-javadoc.jar 
+:	published ivy to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/firrtl_2.11/1.2-SNAPSHOT/ivys/ivy.xml 
+  [32msuccess ]   Total time: 82 s, completed Jul 12, 2019 8:55:32 AM 
+cd chisel3 ;\
+  sbt -ivy /home/mustafa/Desktop/test/rfuzz/.ivy2 publishLocal && touch /home/mustafa/Desktop/test/rfuzz/chisel.stamp
+:Loading settings from plugins.sbt ... 
+:Loading project definition from /home/mustafa/Desktop/test/rfuzz/chisel3/project 
+:Updating ProjectRef(uri("file:/home/mustafa/Desktop/test/rfuzz/chisel3/project/"), "chisel3-build")... 
+:Done updating. 
+:Loading settings from build.sbt ... 
+:Set current project to chisel3 (in build file:/home/mustafa/Desktop/test/rfuzz/chisel3/) 
+:Packaging /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT-sources.jar ... 
+:Done packaging. 
+:Updating coreMacros... 
+:Choosing local for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT 
+:Done updating. 
+:Wrote /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT.pom 
+:Updating chiselFrontend... 
+:Choosing local for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT 
+:Done updating. 
+:Compiling 4 Scala sources to /home/mustafa/Desktop/test/rfuzz/chisel3/coreMacros/target/scala-2.11/classes ... 
+:Done compiling. 
+:Updating ... 
+:Sorting results from edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT, using Fri Jul 12 08:55:31 CEST 2019 and Fri Jul 12 08:55:31 CEST 2019. 
+:Sorting results from edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT, using Fri Jul 12 08:55:31 CEST 2019 and Fri Jul 12 08:55:31 CEST 2019. 
+:Choosing sonatype-snapshots for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT 
+:Done updating. 
+:Compiling 28 Scala sources to /home/mustafa/Desktop/test/rfuzz/chisel3/chiselFrontend/target/scala-2.11/classes ... 
+:/home/mustafa/Desktop/test/rfuzz/chisel3/chiselFrontend/src/main/scala/chisel3/core/Aggregate.scala:81:24: method flatten in class Data is deprecated: pending removal once all instances replaced 
+:    SeqUtils.do_asUInt(flatten.map(_.asUInt())) 
+:                       ^ 
+:/home/mustafa/Desktop/test/rfuzz/chisel3/chiselFrontend/src/main/scala/chisel3/core/Aggregate.scala:87:15: method flatten in class Data is deprecated: pending removal once all instances replaced 
+:    for (x <- flatten) { 
+:              ^ 
+:/home/mustafa/Desktop/test/rfuzz/chisel3/chiselFrontend/src/main/scala/chisel3/core/Annotation.scala:47:30: method apply in object Annotation is deprecated: This returns a LegacyAnnotation, use an explicit Annotation type 
+:  def toFirrtl: Annotation = Annotation(component.toNamed, transformClass, value) 
+:                             ^ 
+:/home/mustafa/Desktop/test/rfuzz/chisel3/chiselFrontend/src/main/scala/chisel3/core/Assert.scala:41:57: method lineContent in trait Position is deprecated: Removed from the public API 
+:    val condStr = s"${p.source.file.name}:${p.line} ${p.lineContent.trim}" 
+:                                                        ^ 
+:/home/mustafa/Desktop/test/rfuzz/chisel3/chiselFrontend/src/main/scala/chisel3/core/Assert.scala:49:57: method lineContent in trait Position is deprecated: Removed from the public API 
+:    val condStr = s"${p.source.file.name}:${p.line} ${p.lineContent.trim}" 
+:                                                        ^ 
+:5 warnings found 
+:Done compiling. 
+:Compiling 29 Scala sources to /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/classes ... 
+:Done compiling. 
+:Main Scala API documentation to /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/api... 
+model contains 143 documentable templates
+:Could not find any member to link for "chisel3.core.UInt". 
+:Could not find any member to link for "chisel3.core.SInt". 
+:Could not find any member to link for "chisel3.core.Bool". 
+:Could not find any member to link for "chisel3.core.FixedPoint". 
+:Could not find any member to link for "chisel3.core.Clock". 
+:Could not find any member to link for "chisel3.core.Reg". 
+:Could not find any member to link for "chisel3.core.Bits". 
+:Could not find any member to link for "chisel3.core.Aggregate". 
+:Could not find any member to link for "chisel3.core.Data". 
+:Could not find any member to link for "chisel3.core.Bundle". 
+:Could not find any member to link for "chisel3.core.Vec". 
+:11 warnings found 
+:Main Scala API documentation successful. 
+:Packaging /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT-javadoc.jar ... 
+:Done packaging. 
+:Packaging /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/chisel3_2.11-3.2-SNAPSHOT.jar ... 
+:Done packaging. 
+::: delivering :: edu.berkeley.cs#chisel3_2.11;3.2-SNAPSHOT :: 3.2-SNAPSHOT :: integration :: Fri Jul 12 08:56:53 CEST 2019 
+:	delivering ivy file to /home/mustafa/Desktop/test/rfuzz/chisel3/target/scala-2.11/ivy-3.2-SNAPSHOT.xml 
+:	published chisel3_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/poms/chisel3_2.11.pom 
+:	published chisel3_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/jars/chisel3_2.11.jar 
+:	published chisel3_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/srcs/chisel3_2.11-sources.jar 
+:	published chisel3_2.11 to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/docs/chisel3_2.11-javadoc.jar 
+:	published ivy to /home/mustafa/Desktop/test/rfuzz/.ivy2/local/edu.berkeley.cs/chisel3_2.11/3.2-SNAPSHOT/ivys/ivy.xml 
+ [32msuccess ]   Total time: 53 s, completed Jul 12, 2019 8:56:53 AM 
+cd instrumentation ;\
+sbt -ivy /home/mustafa/Desktop/test/rfuzz/.ivy2 "runMain hardwareafl.firrtltransforms.CustomTop -i /home/mustafa/Desktop/test/rfuzz/benchmarks/Sodor3Stage.fir -o /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.v -X verilog -ll info -fct hardwareafl.firrtltransforms.NoDedupTransform,hardwareafl.firrtltransforms.ReplaceMemsTransform,hardwareafl.firrtltransforms.SplitMuxConditions,hardwareafl.firrtltransforms.ProfilingTransform,firrtl.passes.wiring.WiringTransform,hardwareafl.firrtltransforms.AddMetaResetTransform "
+:Loading settings from plugins.sbt ... 
+:Loading project definition from /home/mustafa/Desktop/test/rfuzz/instrumentation/project 
+:Updating ProjectRef(uri("file:/home/mustafa/Desktop/test/rfuzz/instrumentation/project/"), "instrumentation-build")... 
+:Done updating. 
+:Found version conflict(s) in library dependencies; some are suspected to be binary incompatible: 
+:	* org.ow2.asm:asm-tree:6.0 is selected over 5.0.3 
+:	    +- org.ow2.asm:asm-commons:6.0                        (depends on 6.0) 
+:	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3) 
+:	    +- org.ow2.asm:asm-util:5.0.3                         (depends on 5.0.3) 
+:	    +- org.ow2.asm:asm-analysis:5.0.3                     (depends on 5.0.3) 
+:	* org.ow2.asm:asm:6.0 is selected over 5.0.3 
+:	    +- org.pantsbuild:jarjar:1.6.5                        (depends on 6.0) 
+:	    +- org.ow2.asm:asm-tree:6.0                           (depends on 6.0) 
+:	    +- org.parboiled:parboiled-java:1.1.7                 (depends on 5.0.3) 
+:	    +- org.ow2.asm:asm-tree:5.0.3                         (depends on 5.0.3) 
+:Run 'evicted' to see detailed eviction warnings 
+:Loading settings from build.sbt ... 
+:Set current project to instrumentation (in build file:/home/mustafa/Desktop/test/rfuzz/instrumentation/) 
+:Updating ... 
+:Choosing local for edu.berkeley.cs#chisel3_2.11;3.2-SNAPSHOT 
+:Choosing local for edu.berkeley.cs#firrtl_2.11;1.2-SNAPSHOT 
+:Done updating. 
+:Compiling 11 Scala sources to /home/mustafa/Desktop/test/rfuzz/instrumentation/target/scala-2.11/classes ... 
+:there were 6 feature warnings; re-run with -feature for details 
+:one warning found 
+:Done compiling. 
+:Packaging /home/mustafa/Desktop/test/rfuzz/instrumentation/target/scala-2.11/instrumentation_2.11-0.1.0-SNAPSHOT.jar ... 
+:Done packaging. 
+:Running hardwareafl.firrtltransforms.CustomTop -i /home/mustafa/Desktop/test/rfuzz/benchmarks/Sodor3Stage.fir -o /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.v -X verilog -ll info -fct hardwareafl.firrtltransforms.NoDedupTransform,hardwareafl.firrtltransforms.ReplaceMemsTransform,hardwareafl.firrtltransforms.SplitMuxConditions,hardwareafl.firrtltransforms.ProfilingTransform,firrtl.passes.wiring.WiringTransform,hardwareafl.firrtltransforms.AddMetaResetTransform 
+Running transforms:
+  NoDedupTransform
+  ChirrtlToHighFirrtl
+  IRToWorkingIR
+  ResolveAndCheck
+  DedupModules
+  HighFirrtlToMiddleFirrtl
+  MiddleFirrtlToLowFirrtl
+  CustomLowFirrtlOpt
+  BlackBoxSourceHelper
+  ReplaceMemsTransform
+  IRToWorkingIR
+  ResolveAndCheck
+  DedupModules
+  HighFirrtlToMiddleFirrtl
+  SplitMuxConditions
+  MiddleFirrtlToLowFirrtl
+  ProfilingTransform
+  WiringTransform
+  IRToWorkingIR
+  ResolveAndCheck
+  DedupModules
+  HighFirrtlToMiddleFirrtl
+  MiddleFirrtlToLowFirrtl
+  AddMetaResetTransform
+======== Starting Transform NoDedupTransform ========
+-----------------------------------------------------
+
+Time: 15.5 ms
+Form: ChirrtlForm
+======== Finished Transform NoDedupTransform ========
+
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 71.1 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 67.3 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 46.9 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 71.1 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 271.7 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 6.3 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 8.0 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 119.1 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 131.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 75.2 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 51.2 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 122.6 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 5.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 30.5 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 25.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 37.4 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 103.9 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 34.9 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 791.2 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 170.0 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 18.6 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 9.2 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 21.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 37.2 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 60.0 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 111.0 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 17.2 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 5.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 11.0 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 8.1 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 6.1 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 20.5 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 13.9 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 60.0 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 41.8 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 480.7 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlToLowFirrtl ========
+======== Starting Transform LowerTypes$ ========
+------------------------------------------------
+
+Time: 177.3 ms
+Form: UnknownForm
+======== Finished Transform LowerTypes$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 18.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 14.1 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 6.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 28.5 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 17.0 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 11.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveReset ========
+
+======== Starting Transform CheckCombLoops ========
+---------------------------------------------------
+
+Time: 182.6 ms
+Form: LowForm
+======== Finished Transform CheckCombLoops ========
+
+======== Starting Transform RemoveWires ========
+------------------------------------------------
+
+Time: 111.0 ms
+Form: UnknownForm
+======== Finished Transform RemoveWires ========
+
+------------------------------------------------------------
+
+Time: 578.2 ms
+Form: LowForm
+======== Finished Transform MiddleFirrtlToLowFirrtl ========
+
+======== Starting Transform CustomLowFirrtlOpt ========
+======== Starting Transform RemoveValidIf$ ========
+---------------------------------------------------
+
+Time: 13.6 ms
+Form: UnknownForm
+======== Finished Transform RemoveValidIf$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 154.2 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 63.6 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform CustomVerilogMemDelays ========
+-----------------------------------------------------------
+
+Time: 286.6 ms
+Form: UnknownForm
+======== Finished Transform CustomVerilogMemDelays ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 42.3 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform SplitExpressions$ ========
+------------------------------------------------------
+
+Time: 14.7 ms
+Form: UnknownForm
+======== Finished Transform SplitExpressions$ ========
+
+======== Starting Transform CommonSubexpressionElimination$ ========
+--------------------------------------------------------------------
+
+Time: 30.5 ms
+Form: UnknownForm
+======== Finished Transform CommonSubexpressionElimination$ ========
+
+======== Starting Transform DeadCodeElimination ========
+--------------------------------------------------------
+
+Time: 130.5 ms
+Form: UnknownForm
+======== Finished Transform DeadCodeElimination ========
+
+-------------------------------------------------------
+
+Time: 767.9 ms
+Form: LowForm
+======== Finished Transform CustomLowFirrtlOpt ========
+
+======== Starting Transform BlackBoxSourceHelper ========
+---------------------------------------------------------
+
+Time: 0.9 ms
+Form: LowForm
+======== Finished Transform BlackBoxSourceHelper ========
+
+======== Starting Transform ReplaceMemsTransform ========
+[0.001] Elaborating design...
+[35minfo ] [1.435] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 1.4 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 5.8 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 1.9 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 10.8 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 6.6 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 6.8 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 3.4 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 3.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 1.4 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 9.4 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 6.9 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 6.5 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 4.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 6.1 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 56.7 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 43.3 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 15.8 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 12.7 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 23.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 1.1 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 1.7 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 9.0 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.1 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 13.1 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 12.3 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 108.0 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.4 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 230.1 ms
+ [35minfo ] [0.000] Elaborating design...
+ [35minfo ] [0.211] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 1.9 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 8.4 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 12.9 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 0.4 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 0.6 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 11.2 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 2.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 1.7 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 9.2 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 7.0 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 2.5 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 4.1 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 43.8 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 29.3 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.3 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 7.9 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 7.1 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 16.8 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 4.5 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 2.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 2.2 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 4.4 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 10.0 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 4.8 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 17.1 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 88.1 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 175.7 ms
+ [35minfo ] [0.000] Elaborating design...
+ [35minfo ] [0.178] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 24.4 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 28.6 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 0.8 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 3.6 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 7.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 0.6 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 14.5 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 1.1 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 10.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 5.7 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 50.8 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 28.4 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.3 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 8.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 4.0 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 12.4 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 9.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 3.2 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 6.8 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 10.5 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 4.7 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 9.9 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 81.8 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 191.1 ms
+ [35minfo ] [0.000] Elaborating design...
+ [35minfo ] [0.265] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 1.1 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 2.0 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 8.4 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 13.5 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 0.6 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 2.8 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 3.0 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 11.5 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 1.5 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.4 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 6.7 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 2.8 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 5.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 37.9 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 23.1 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.6 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.3 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 2.1 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 8.3 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 14.0 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 5.0 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 1.9 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 9.3 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 5.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 7.3 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 3.6 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 76.0 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 152.9 ms
+ [35minfo ] [0.000] Elaborating design...
+ [35minfo ] [0.167] Done elaborating.
+======== Starting Transform ChirrtlToHighFirrtl ========
+======== Starting Transform CheckChirrtl$ ========
+--------------------------------------------------
+
+Time: 3.5 ms
+Form: UnknownForm
+======== Finished Transform CheckChirrtl$ ========
+
+======== Starting Transform CInferTypes$ ========
+-------------------------------------------------
+
+Time: 5.6 ms
+Form: UnknownForm
+======== Finished Transform CInferTypes$ ========
+
+======== Starting Transform CInferMDir$ ========
+------------------------------------------------
+
+Time: 0.8 ms
+Form: UnknownForm
+======== Finished Transform CInferMDir$ ========
+
+======== Starting Transform RemoveCHIRRTL$ ========
+---------------------------------------------------
+
+Time: 1.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveCHIRRTL$ ========
+
+--------------------------------------------------------
+
+Time: 12.1 ms
+Form: HighForm
+======== Finished Transform ChirrtlToHighFirrtl ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 0.4 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 0.5 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 9.4 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 1.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 11.0 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 5.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 1.5 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 1.2 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 8.7 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 0.7 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 43.7 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 27.9 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 0.3 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 1.7 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 4.0 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 10.5 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 1.0 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 10.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 2.0 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 0.9 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 0.6 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 7.8 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 1.1 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 12.4 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 7.7 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 84.6 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlEmitter ========
+--------------------------------------------------------
+
+Time: 0.0 ms
+Form: MidForm
+======== Finished Transform MiddleFirrtlEmitter ========
+
+Total FIRRTL Compile Time: 172.3 ms
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 63.0 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 22.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 26.4 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 14.4 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 94.5 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 15.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 27.9 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 4.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 23.8 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 49.8 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 11.4 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+---------------------------------------------------------
+
+Time: 3954.4 ms
+Form: HighForm
+======== Finished Transform ReplaceMemsTransform ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 3.1 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 10.5 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 43.4 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 11.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 25.0 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 11.5 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 76.1 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 15.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 23.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 8.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 24.9 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 50.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 29.9 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 330.5 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 130.2 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 7.8 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 1.4 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 4.3 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 20.5 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 35.0 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 29.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 3.0 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 10.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 16.2 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 3.1 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 1.7 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 17.1 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 21.0 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 76.5 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 19.2 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 282.4 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform SplitMuxConditions ========
+-------------------------------------------------------
+
+Time: 13.5 ms
+Form: MidForm
+======== Finished Transform SplitMuxConditions ========
+
+======== Starting Transform MiddleFirrtlToLowFirrtl ========
+======== Starting Transform LowerTypes$ ========
+------------------------------------------------
+
+Time: 141.1 ms
+Form: UnknownForm
+======== Finished Transform LowerTypes$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 12.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 14.1 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 2.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 33.6 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 2.8 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 7.2 ms
+Form: UnknownForm
+======== Finished Transform RemoveReset ========
+
+======== Starting Transform CheckCombLoops ========
+---------------------------------------------------
+
+Time: 108.6 ms
+Form: LowForm
+======== Finished Transform CheckCombLoops ========
+
+======== Starting Transform RemoveWires ========
+------------------------------------------------
+
+Time: 75.7 ms
+Form: UnknownForm
+======== Finished Transform RemoveWires ========
+
+------------------------------------------------------------
+
+Time: 405.7 ms
+Form: LowForm
+======== Finished Transform MiddleFirrtlToLowFirrtl ========
+
+======== Starting Transform ProfilingTransform ========
+======== Starting Transform FixupOps ========
+---------------------------------------------
+
+Time: 23.6 ms
+Form: LowForm
+======== Finished Transform FixupOps ========
+
+-------------------------------------------------------
+
+Time: 365.2 ms
+Form: LowForm
+======== Finished Transform ProfilingTransform ========
+
+======== Starting Transform WiringTransform ========
+======== Starting Transform Wiring ========
+-------------------------------------------
+
+Time: 761.6 ms
+Form: UnknownForm
+======== Finished Transform Wiring ========
+
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 9.8 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+----------------------------------------------------
+
+Time: 816.1 ms
+Form: UnknownForm
+======== Finished Transform WiringTransform ========
+
+======== Starting Transform IRToWorkingIR ========
+======== Starting Transform ToWorkingIR$ ========
+-------------------------------------------------
+
+Time: 2.9 ms
+Form: UnknownForm
+======== Finished Transform ToWorkingIR$ ========
+
+--------------------------------------------------
+
+Time: 21.5 ms
+Form: HighForm
+======== Finished Transform IRToWorkingIR ========
+
+======== Starting Transform ResolveAndCheck ========
+======== Starting Transform CheckHighForm$ ========
+---------------------------------------------------
+
+Time: 29.7 ms
+Form: UnknownForm
+======== Finished Transform CheckHighForm$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 19.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 42.9 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 50.8 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 133.0 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 11.9 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 37.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 24.5 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform CheckGenders$ ========
+--------------------------------------------------
+
+Time: 57.6 ms
+Form: UnknownForm
+======== Finished Transform CheckGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 71.2 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 10.5 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+----------------------------------------------------
+
+Time: 621.6 ms
+Form: HighForm
+======== Finished Transform ResolveAndCheck ========
+
+======== Starting Transform DedupModules ========
+-------------------------------------------------
+
+Time: 348.3 ms
+Form: HighForm
+======== Finished Transform DedupModules ========
+
+======== Starting Transform HighFirrtlToMiddleFirrtl ========
+======== Starting Transform PullMuxes$ ========
+-----------------------------------------------
+
+Time: 8.9 ms
+Form: UnknownForm
+======== Finished Transform PullMuxes$ ========
+
+======== Starting Transform ReplaceAccesses$ ========
+-----------------------------------------------------
+
+Time: 7.8 ms
+Form: UnknownForm
+======== Finished Transform ReplaceAccesses$ ========
+
+======== Starting Transform ExpandConnects$ ========
+----------------------------------------------------
+
+Time: 32.9 ms
+Form: UnknownForm
+======== Finished Transform ExpandConnects$ ========
+
+======== Starting Transform RemoveAccesses$ ========
+----------------------------------------------------
+
+Time: 39.3 ms
+Form: UnknownForm
+======== Finished Transform RemoveAccesses$ ========
+
+======== Starting Transform Uniquify$ ========
+----------------------------------------------
+
+Time: 97.1 ms
+Form: UnknownForm
+======== Finished Transform Uniquify$ ========
+
+======== Starting Transform ExpandWhens$ ========
+-------------------------------------------------
+
+Time: 298.5 ms
+Form: UnknownForm
+======== Finished Transform ExpandWhens$ ========
+
+======== Starting Transform CheckInitialization$ ========
+---------------------------------------------------------
+
+Time: 10.1 ms
+Form: UnknownForm
+======== Finished Transform CheckInitialization$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 21.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 70.7 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform CheckTypes$ ========
+------------------------------------------------
+
+Time: 33.0 ms
+Form: UnknownForm
+======== Finished Transform CheckTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 20.3 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 105.0 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform CheckWidths$ ========
+-------------------------------------------------
+
+Time: 6.9 ms
+Form: UnknownForm
+======== Finished Transform CheckWidths$ ========
+
+======== Starting Transform ConvertFixedToSInt$ ========
+--------------------------------------------------------
+
+Time: 125.3 ms
+Form: UnknownForm
+======== Finished Transform ConvertFixedToSInt$ ========
+
+======== Starting Transform ZeroWidth$ ========
+-----------------------------------------------
+
+Time: 84.7 ms
+Form: UnknownForm
+======== Finished Transform ZeroWidth$ ========
+
+-------------------------------------------------------------
+
+Time: 1166.3 ms
+Form: MidForm
+======== Finished Transform HighFirrtlToMiddleFirrtl ========
+
+======== Starting Transform MiddleFirrtlToLowFirrtl ========
+======== Starting Transform LowerTypes$ ========
+------------------------------------------------
+
+Time: 225.2 ms
+Form: UnknownForm
+======== Finished Transform LowerTypes$ ========
+
+======== Starting Transform ResolveKinds$ ========
+--------------------------------------------------
+
+Time: 29.8 ms
+Form: UnknownForm
+======== Finished Transform ResolveKinds$ ========
+
+======== Starting Transform InferTypes$ ========
+------------------------------------------------
+
+Time: 88.6 ms
+Form: UnknownForm
+======== Finished Transform InferTypes$ ========
+
+======== Starting Transform ResolveGenders$ ========
+----------------------------------------------------
+
+Time: 21.0 ms
+Form: UnknownForm
+======== Finished Transform ResolveGenders$ ========
+
+======== Starting Transform InferWidths$ ========
+-------------------------------------------------
+
+Time: 130.9 ms
+Form: UnknownForm
+======== Finished Transform InferWidths$ ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 12.6 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 2.4 ms
+Form: UnknownForm
+======== Finished Transform RemoveReset ========
+
+======== Starting Transform CheckCombLoops ========
+---------------------------------------------------
+
+Time: 264.1 ms
+Form: LowForm
+======== Finished Transform CheckCombLoops ========
+
+======== Starting Transform RemoveWires ========
+------------------------------------------------
+
+Time: 133.1 ms
+Form: UnknownForm
+======== Finished Transform RemoveWires ========
+
+------------------------------------------------------------
+
+Time: 988.5 ms
+Form: LowForm
+======== Finished Transform MiddleFirrtlToLowFirrtl ========
+
+======== Starting Transform AddMetaResetTransform ========
+======== Starting Transform RemoveReset ========
+------------------------------------------------
+
+Time: 1.0 ms
+Form: LowForm
+======== Finished Transform RemoveReset ========
+
+----------------------------------------------------------
+
+Time: 160.3 ms
+Form: LowForm
+======== Finished Transform AddMetaResetTransform ========
+
+Total Custom FIRRTL Compile Time: 12866.6 ms
+Running transforms:
+  LowFirrtlOptimization
+  VerilogEmitter
+======== Starting Transform LowFirrtlOptimization ========
+======== Starting Transform RemoveValidIf$ ========
+---------------------------------------------------
+
+Time: 2.0 ms
+Form: UnknownForm
+======== Finished Transform RemoveValidIf$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 76.8 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform PadWidths$ ========
+-----------------------------------------------
+
+Time: 80.3 ms
+Form: UnknownForm
+======== Finished Transform PadWidths$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 62.6 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform Legalize$ ========
+----------------------------------------------
+
+Time: 6.8 ms
+Form: UnknownForm
+======== Finished Transform Legalize$ ========
+
+======== Starting Transform VerilogMemDelays$ ========
+------------------------------------------------------
+
+Time: 40.6 ms
+Form: UnknownForm
+======== Finished Transform VerilogMemDelays$ ========
+
+======== Starting Transform ConstantPropagation ========
+--------------------------------------------------------
+
+Time: 60.4 ms
+Form: UnknownForm
+======== Finished Transform ConstantPropagation ========
+
+======== Starting Transform SplitExpressions$ ========
+------------------------------------------------------
+
+Time: 18.5 ms
+Form: UnknownForm
+======== Finished Transform SplitExpressions$ ========
+
+======== Starting Transform CommonSubexpressionElimination$ ========
+--------------------------------------------------------------------
+
+Time: 175.3 ms
+Form: UnknownForm
+======== Finished Transform CommonSubexpressionElimination$ ========
+
+======== Starting Transform DeadCodeElimination ========
+--------------------------------------------------------
+
+Time: 240.7 ms
+Form: UnknownForm
+======== Finished Transform DeadCodeElimination ========
+
+----------------------------------------------------------
+
+Time: 839.3 ms
+Form: LowForm
+======== Finished Transform LowFirrtlOptimization ========
+
+======== Starting Transform VerilogEmitter ========
+======== Starting Transform FlattenRegUpdate ========
+-----------------------------------------------------
+
+Time: 25.4 ms
+Form: LowForm
+======== Finished Transform FlattenRegUpdate ========
+
+======== Starting Transform DeadCodeElimination ========
+--------------------------------------------------------
+
+Time: 166.4 ms
+Form: LowForm
+======== Finished Transform DeadCodeElimination ========
+
+======== Starting Transform VerilogModulusCleanup$ ========
+-----------------------------------------------------------
+
+Time: 24.7 ms
+Form: UnknownForm
+======== Finished Transform VerilogModulusCleanup$ ========
+
+======== Starting Transform VerilogWrap$ ========
+-------------------------------------------------
+
+Time: 10.2 ms
+Form: UnknownForm
+======== Finished Transform VerilogWrap$ ========
+
+======== Starting Transform VerilogRename$ ========
+---------------------------------------------------
+
+Time: 24.3 ms
+Form: UnknownForm
+======== Finished Transform VerilogRename$ ========
+
+======== Starting Transform VerilogPrep$ ========
+-------------------------------------------------
+
+Time: 65.5 ms
+Form: UnknownForm
+======== Finished Transform VerilogPrep$ ========
+
+---------------------------------------------------
+
+Time: 792.0 ms
+Form: LowForm
+======== Finished Transform VerilogEmitter ========
+
+Total Custom FIRRTL Compile Time: 1655.3 ms
+ [32msuccess ]   Total time: 37 s, completed Jul 12, 2019 8:57:56 AM 
+mv instrumentation/Sodor3Stage.toml /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_InstrumentationInfo.toml
+mv instrumentation/Sodor3Stage.lo.fir /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.lo.fir
+cd harness ;\
+sbt "run /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_InstrumentationInfo.toml /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.toml /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.e2e.toml"
+:Updated file /home/mustafa/Desktop/test/rfuzz/harness/project/build.properties: set sbt.version to 1.2.8 
+:Loading project definition from /home/mustafa/Desktop/test/rfuzz/harness/project 
+:Updating ProjectRef(uri("file:/home/mustafa/Desktop/test/rfuzz/harness/project/"), "harness-build")... 
+:Done updating. 
+:Loading settings for project harness from build.sbt ... 
+:Set current project to harness (in build file:/home/mustafa/Desktop/test/rfuzz/harness/) 
+:Updating ... 
+:Done updating. 
+:Compiling 5 Scala sources to /home/mustafa/Desktop/test/rfuzz/harness/target/scala-2.11/classes ... 
+:there were 32 feature warnings; re-run with -feature for details 
+:one warning found 
+:Done compiling. 
+:Packaging /home/mustafa/Desktop/test/rfuzz/harness/target/scala-2.11/harness_2.11-0.1.jar ... 
+:Done packaging. 
+:Running pynq.HarnessGenerator /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_InstrumentationInfo.toml /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.toml /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage.e2e.toml 
+Conf: DUTConfig(Sodor3Stage.v,Sodor3Stage,List(Input(io_imem_resp_bits_data,32), Input(io_imem_req_ready,1), Input(io_imem_resp_valid,1), Input(io_reset,1)),35,List(Port(func_cover_out,0), Port(assert_out,1), Port(auto_cover_out,746)),List(Coverage(assert_out,_GEN_388,0,Sodor3Stage.fir,2483,6,((((insn_ret + io_exception) <= 1) or reset) == 0)), Coverage(auto_cover_out,_GEN_1,0,Sodor3Stage.fir,450,6,io_cpu_req_valid), Coverage(auto_cover_out,_GEN_5,1,Sodor3Stage.fir,448,4,io_cpu_resp_ready), Coverage(auto_cover_out,_GEN_0,11,Sodor3Stage.fir,619,4,(4111 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_1,12,Sodor3Stage.fir,620,4,(273678451 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_2,13,Sodor3Stage.fir,621,4,(1048691 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_3,14,Sodor3Stage.fir,622,4,(2065694835 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_4,15,Sodor3Stage.fir,623,4,(807403635 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_5,16,Sodor3Stage.fir,624,4,(115 == io_imem_resp_bits_inst)), Coverage(auto_cover_out,_GEN_6,17,Sodor3Stage.fir,625,4,(28787 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_7,18,Sodor3Stage.fir,626,4,(12403 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_8,19,Sodor3Stage.fir,627,4,(8307 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_9,20,Sodor3Stage.fir,628,4,(4211 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_10,21,Sodor3Stage.fir,629,4,(24691 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_11,22,Sodor3Stage.fir,630,4,(20595 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_12,23,Sodor3Stage.fir,631,4,(24675 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_13,24,Sodor3Stage.fir,632,4,(16483 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_14,25,Sodor3Stage.fir,633,4,(28771 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_15,26,Sodor3Stage.fir,634,4,(20579 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_16,27,Sodor3Stage.fir,635,4,(4195 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_17,28,Sodor3Stage.fir,636,4,(99 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_18,29,Sodor3Stage.fir,637,4,(103 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_19,30,Sodor3Stage.fir,638,4,(111 == (io_imem_resp_bits_inst and 127))), Coverage(auto_cover_out,_GEN_20,31,Sodor3Stage.fir,639,4,(20531 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_21,32,Sodor3Stage.fir,640,4,(1073762355 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_22,33,Sodor3Stage.fir,641,4,(16435 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_23,34,Sodor3Stage.fir,642,4,(24627 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_24,35,Sodor3Stage.fir,643,4,(28723 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_25,36,Sodor3Stage.fir,644,4,(12339 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_26,37,Sodor3Stage.fir,645,4,(8243 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_27,38,Sodor3Stage.fir,646,4,(1073741875 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_28,39,Sodor3Stage.fir,647,4,(51 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_29,40,Sodor3Stage.fir,648,4,(4147 == (io_imem_resp_bits_inst and 4261441663))), Coverage(auto_cover_out,_GEN_30,41,Sodor3Stage.fir,649,4,(20499 == (io_imem_resp_bits_inst and 4227887231))), Coverage(auto_cover_out,_GEN_31,42,Sodor3Stage.fir,650,4,(1073762323 == (io_imem_resp_bits_inst and 4227887231))), Coverage(auto_cover_out,_GEN_32,43,Sodor3Stage.fir,651,4,(4115 == (io_imem_resp_bits_inst and 4227887231))), Coverage(auto_cover_out,_GEN_33,44,Sodor3Stage.fir,652,4,(12307 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_34,45,Sodor3Stage.fir,653,4,(8211 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_35,46,Sodor3Stage.fir,654,4,(16403 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_36,47,Sodor3Stage.fir,655,4,(24595 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_37,48,Sodor3Stage.fir,656,4,(28691 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_38,49,Sodor3Stage.fir,657,4,(19 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_39,50,Sodor3Stage.fir,658,4,(55 == (io_imem_resp_bits_inst and 127))), Coverage(auto_cover_out,_GEN_40,51,Sodor3Stage.fir,659,4,(23 == (io_imem_resp_bits_inst and 127))), Coverage(auto_cover_out,_GEN_41,52,Sodor3Stage.fir,660,4,(4131 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_42,53,Sodor3Stage.fir,661,4,(35 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_43,54,Sodor3Stage.fir,662,4,(8227 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_44,55,Sodor3Stage.fir,663,4,(20483 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_45,56,Sodor3Stage.fir,664,4,(4099 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_46,57,Sodor3Stage.fir,665,4,(16387 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_47,58,Sodor3Stage.fir,666,4,(3 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_48,59,Sodor3Stage.fir,667,4,(8195 == (io_imem_resp_bits_inst and 28799))), Coverage(auto_cover_out,_GEN_402,413,Sodor3Stage.fir,1322,4,(io_dat_br_eq == 0)), Coverage(auto_cover_out,_GEN_403,414,Sodor3Stage.fir,1324,4,io_dat_br_eq), Coverage(auto_cover_out,_GEN_404,415,Sodor3Stage.fir,1327,4,(io_dat_br_lt == 0)), Coverage(auto_cover_out,_GEN_405,416,Sodor3Stage.fir,1330,4,(io_dat_br_ltu == 0)), Coverage(auto_cover_out,_GEN_406,417,Sodor3Stage.fir,1332,4,io_dat_br_lt), Coverage(auto_cover_out,_GEN_407,418,Sodor3Stage.fir,1334,4,io_dat_br_ltu), Coverage(auto_cover_out,_GEN_408,419,Sodor3Stage.fir,1337,4,(cs_br_type == 8)), Coverage(auto_cover_out,_GEN_409,420,Sodor3Stage.fir,1338,4,(cs_br_type == 7)), Coverage(auto_cover_out,_GEN_410,421,Sodor3Stage.fir,1339,4,(cs_br_type == 6)), Coverage(auto_cover_out,_GEN_411,422,Sodor3Stage.fir,1340,4,(cs_br_type == 5)), Coverage(auto_cover_out,_GEN_412,423,Sodor3Stage.fir,1341,4,(cs_br_type == 4)), Coverage(auto_cover_out,_GEN_413,424,Sodor3Stage.fir,1342,4,(cs_br_type == 3)), Coverage(auto_cover_out,_GEN_414,425,Sodor3Stage.fir,1343,4,(cs_br_type == 2)), Coverage(auto_cover_out,_GEN_415,426,Sodor3Stage.fir,1344,4,(cs_br_type == 1)), Coverage(auto_cover_out,_GEN_416,427,Sodor3Stage.fir,1345,4,(cs_br_type == 0)), Coverage(auto_cover_out,_GEN_417,428,Sodor3Stage.fir,1346,4,take_evec), Coverage(auto_cover_out,_GEN_418,429,Sodor3Stage.fir,1371,4,csr_ren), Coverage(auto_cover_out,_GEN_425,436,,-1,-1,(io_imem_resp_valid == 0)), Coverage(auto_cover_out,_GEN_0,441,Sodor3Stage.fir,1397,4,io_fn[3:3]), Coverage(auto_cover_out,_GEN_1,442,Sodor3Stage.fir,1407,4,io_fn[1:1]), Coverage(auto_cover_out,_GEN_2,443,Sodor3Stage.fir,1408,4,(io_in1[31:31] == io_in2[31:31])), Coverage(auto_cover_out,_GEN_3,444,Sodor3Stage.fir,1463,4,((io_fn == 5) or (io_fn == 11))), Coverage(auto_cover_out,_GEN_4,445,Sodor3Stage.fir,1526,4,(io_fn == 4)), Coverage(auto_cover_out,_GEN_5,446,Sodor3Stage.fir,1527,4,(io_fn == 6)), Coverage(auto_cover_out,_GEN_6,447,Sodor3Stage.fir,1528,4,(io_fn == 7)), Coverage(auto_cover_out,_GEN_7,448,Sodor3Stage.fir,1539,4,(io_fn == 1)), Coverage(auto_cover_out,_GEN_9,450,Sodor3Stage.fir,1541,4,((io_fn == 12) or (io_fn == 14))), Coverage(auto_cover_out,_GEN_10,451,,-1,-1,((io_fn == 0) or (io_fn == 10))), Coverage(auto_cover_out,_GEN_7,454,Sodor3Stage.fir,2237,4,((io_rw_cmd == 2) or (io_rw_cmd == 3))), Coverage(auto_cover_out,_GEN_11,455,Sodor3Stage.fir,2240,4,(io_rw_cmd == 3)), Coverage(auto_cover_out,_GEN_15,456,Sodor3Stage.fir,2472,4,io_exception), Coverage(auto_cover_out,_GEN_150,460,Sodor3Stage.fir,2500,4,(insn_ret and (io_decode_csr[10:10] == 0))), Coverage(auto_cover_out,_GEN_154,464,Sodor3Stage.fir,2506,4,insn_call), Coverage(auto_cover_out,_GEN_156,466,Sodor3Stage.fir,2512,4,insn_break), Coverage(auto_cover_out,_GEN_157,467,Sodor3Stage.fir,2518,4,(io_decode_csr == 2816)), Coverage(auto_cover_out,_GEN_158,468,Sodor3Stage.fir,2519,4,(io_decode_csr == 2818)), Coverage(auto_cover_out,_GEN_159,469,Sodor3Stage.fir,2520,4,(io_decode_csr == 3859)), Coverage(auto_cover_out,_GEN_160,470,Sodor3Stage.fir,2523,4,(io_decode_csr == 769)), Coverage(auto_cover_out,_GEN_161,471,Sodor3Stage.fir,2524,4,(io_decode_csr == 768)), Coverage(auto_cover_out,_GEN_162,472,Sodor3Stage.fir,2525,4,(io_decode_csr == 773)), Coverage(auto_cover_out,_GEN_163,473,Sodor3Stage.fir,2526,4,(io_decode_csr == 836)), Coverage(auto_cover_out,_GEN_164,474,Sodor3Stage.fir,2527,4,(io_decode_csr == 772)), Coverage(auto_cover_out,_GEN_165,475,Sodor3Stage.fir,2528,4,(io_decode_csr == 832)), Coverage(auto_cover_out,_GEN_166,476,Sodor3Stage.fir,2529,4,(io_decode_csr == 833)), Coverage(auto_cover_out,_GEN_167,477,Sodor3Stage.fir,2530,4,(io_decode_csr == 835)), Coverage(auto_cover_out,_GEN_168,478,Sodor3Stage.fir,2531,4,(io_decode_csr == 834)), Coverage(auto_cover_out,_GEN_169,479,Sodor3Stage.fir,2532,4,(io_decode_csr == 3860)), Coverage(auto_cover_out,_GEN_170,480,Sodor3Stage.fir,2533,4,(io_decode_csr == 1968)), Coverage(auto_cover_out,_GEN_171,481,Sodor3Stage.fir,2534,4,(io_decode_csr == 1969)), Coverage(auto_cover_out,_GEN_172,482,Sodor3Stage.fir,2535,4,(io_decode_csr == 1970)), Coverage(auto_cover_out,_GEN_173,483,Sodor3Stage.fir,2536,4,(io_decode_csr == 770)), Coverage(auto_cover_out,_GEN_174,484,Sodor3Stage.fir,2537,4,(io_decode_csr == 2819)), Coverage(auto_cover_out,_GEN_175,485,Sodor3Stage.fir,2538,4,(io_decode_csr == 2947)), Coverage(auto_cover_out,_GEN_176,486,Sodor3Stage.fir,2539,4,(io_decode_csr == 2820)), Coverage(auto_cover_out,_GEN_177,487,Sodor3Stage.fir,2540,4,(io_decode_csr == 2948)), Coverage(auto_cover_out,_GEN_178,488,Sodor3Stage.fir,2541,4,(io_decode_csr == 2821)), Coverage(auto_cover_out,_GEN_179,489,Sodor3Stage.fir,2542,4,(io_decode_csr == 2949)), Coverage(auto_cover_out,_GEN_180,490,Sodor3Stage.fir,2543,4,(io_decode_csr == 2822)), Coverage(auto_cover_out,_GEN_181,491,Sodor3Stage.fir,2544,4,(io_decode_csr == 2950)), Coverage(auto_cover_out,_GEN_182,492,Sodor3Stage.fir,2545,4,(io_decode_csr == 2823)), Coverage(auto_cover_out,_GEN_183,493,Sodor3Stage.fir,2546,4,(io_decode_csr == 2951)), Coverage(auto_cover_out,_GEN_184,494,Sodor3Stage.fir,2547,4,(io_decode_csr == 2824)), Coverage(auto_cover_out,_GEN_185,495,Sodor3Stage.fir,2548,4,(io_decode_csr == 2952)), Coverage(auto_cover_out,_GEN_186,496,Sodor3Stage.fir,2549,4,(io_decode_csr == 2825)), Coverage(auto_cover_out,_GEN_187,497,Sodor3Stage.fir,2550,4,(io_decode_csr == 2953)), Coverage(auto_cover_out,_GEN_188,498,Sodor3Stage.fir,2551,4,(io_decode_csr == 2826)), Coverage(auto_cover_out,_GEN_189,499,Sodor3Stage.fir,2552,4,(io_decode_csr == 2954)), Coverage(auto_cover_out,_GEN_190,500,Sodor3Stage.fir,2553,4,(io_decode_csr == 2827)), Coverage(auto_cover_out,_GEN_191,501,Sodor3Stage.fir,2554,4,(io_decode_csr == 2955)), Coverage(auto_cover_out,_GEN_192,502,Sodor3Stage.fir,2555,4,(io_decode_csr == 2828)), Coverage(auto_cover_out,_GEN_193,503,Sodor3Stage.fir,2556,4,(io_decode_csr == 2956)), Coverage(auto_cover_out,_GEN_194,504,Sodor3Stage.fir,2557,4,(io_decode_csr == 2829)), Coverage(auto_cover_out,_GEN_195,505,Sodor3Stage.fir,2558,4,(io_decode_csr == 2957)), Coverage(auto_cover_out,_GEN_196,506,Sodor3Stage.fir,2559,4,(io_decode_csr == 2830)), Coverage(auto_cover_out,_GEN_197,507,Sodor3Stage.fir,2560,4,(io_decode_csr == 2958)), Coverage(auto_cover_out,_GEN_198,508,Sodor3Stage.fir,2561,4,(io_decode_csr == 2831)), Coverage(auto_cover_out,_GEN_199,509,Sodor3Stage.fir,2562,4,(io_decode_csr == 2959)), Coverage(auto_cover_out,_GEN_200,510,Sodor3Stage.fir,2563,4,(io_decode_csr == 2832)), Coverage(auto_cover_out,_GEN_201,511,Sodor3Stage.fir,2564,4,(io_decode_csr == 2960)), Coverage(auto_cover_out,_GEN_202,512,Sodor3Stage.fir,2565,4,(io_decode_csr == 2833)), Coverage(auto_cover_out,_GEN_203,513,Sodor3Stage.fir,2566,4,(io_decode_csr == 2961)), Coverage(auto_cover_out,_GEN_204,514,Sodor3Stage.fir,2567,4,(io_decode_csr == 2834)), Coverage(auto_cover_out,_GEN_205,515,Sodor3Stage.fir,2568,4,(io_decode_csr == 2962)), Coverage(auto_cover_out,_GEN_206,516,Sodor3Stage.fir,2569,4,(io_decode_csr == 2835)), Coverage(auto_cover_out,_GEN_207,517,Sodor3Stage.fir,2570,4,(io_decode_csr == 2963)), Coverage(auto_cover_out,_GEN_208,518,Sodor3Stage.fir,2571,4,(io_decode_csr == 2836)), Coverage(auto_cover_out,_GEN_209,519,Sodor3Stage.fir,2572,4,(io_decode_csr == 2964)), Coverage(auto_cover_out,_GEN_210,520,Sodor3Stage.fir,2573,4,(io_decode_csr == 2837)), Coverage(auto_cover_out,_GEN_211,521,Sodor3Stage.fir,2574,4,(io_decode_csr == 2965)), Coverage(auto_cover_out,_GEN_212,522,Sodor3Stage.fir,2575,4,(io_decode_csr == 2838)), Coverage(auto_cover_out,_GEN_213,523,Sodor3Stage.fir,2576,4,(io_decode_csr == 2966)), Coverage(auto_cover_out,_GEN_214,524,Sodor3Stage.fir,2577,4,(io_decode_csr == 2839)), Coverage(auto_cover_out,_GEN_215,525,Sodor3Stage.fir,2578,4,(io_decode_csr == 2967)), Coverage(auto_cover_out,_GEN_216,526,Sodor3Stage.fir,2579,4,(io_decode_csr == 2840)), Coverage(auto_cover_out,_GEN_217,527,Sodor3Stage.fir,2580,4,(io_decode_csr == 2968)), Coverage(auto_cover_out,_GEN_218,528,Sodor3Stage.fir,2581,4,(io_decode_csr == 2841)), Coverage(auto_cover_out,_GEN_219,529,Sodor3Stage.fir,2582,4,(io_decode_csr == 2969)), Coverage(auto_cover_out,_GEN_220,530,Sodor3Stage.fir,2583,4,(io_decode_csr == 2842)), Coverage(auto_cover_out,_GEN_221,531,Sodor3Stage.fir,2584,4,(io_decode_csr == 2970)), Coverage(auto_cover_out,_GEN_222,532,Sodor3Stage.fir,2585,4,(io_decode_csr == 2843)), Coverage(auto_cover_out,_GEN_223,533,Sodor3Stage.fir,2586,4,(io_decode_csr == 2971)), Coverage(auto_cover_out,_GEN_224,534,Sodor3Stage.fir,2587,4,(io_decode_csr == 2844)), Coverage(auto_cover_out,_GEN_225,535,Sodor3Stage.fir,2588,4,(io_decode_csr == 2972)), Coverage(auto_cover_out,_GEN_226,536,Sodor3Stage.fir,2589,4,(io_decode_csr == 2845)), Coverage(auto_cover_out,_GEN_227,537,Sodor3Stage.fir,2590,4,(io_decode_csr == 2973)), Coverage(auto_cover_out,_GEN_228,538,Sodor3Stage.fir,2591,4,(io_decode_csr == 2846)), Coverage(auto_cover_out,_GEN_229,539,Sodor3Stage.fir,2592,4,(io_decode_csr == 2974)), Coverage(auto_cover_out,_GEN_230,540,Sodor3Stage.fir,2593,4,(io_decode_csr == 2847)), Coverage(auto_cover_out,_GEN_231,541,Sodor3Stage.fir,2594,4,(io_decode_csr == 2975)), Coverage(auto_cover_out,_GEN_232,542,Sodor3Stage.fir,2595,4,(io_decode_csr == 2848)), Coverage(auto_cover_out,_GEN_233,543,Sodor3Stage.fir,2596,4,(io_decode_csr == 2976)), Coverage(auto_cover_out,_GEN_234,544,Sodor3Stage.fir,2597,4,(io_decode_csr == 2849)), Coverage(auto_cover_out,_GEN_235,545,Sodor3Stage.fir,2598,4,(io_decode_csr == 2977)), Coverage(auto_cover_out,_GEN_236,546,Sodor3Stage.fir,2599,4,(io_decode_csr == 2850)), Coverage(auto_cover_out,_GEN_237,547,Sodor3Stage.fir,2600,4,(io_decode_csr == 2978)), Coverage(auto_cover_out,_GEN_309,619,Sodor3Stage.fir,3210,6,(io_decode_csr == 2944)), Coverage(auto_cover_out,_GEN_313,623,Sodor3Stage.fir,3225,6,(io_decode_csr == 2946)), Coverage(auto_cover_out,_GEN_324,634,Sodor3Stage.fir,2690,4,wen), Coverage(auto_cover_out,_GEN_0,698,Sodor3Stage.fir,3404,4,imm_j[19:19]), Coverage(auto_cover_out,_GEN_1,699,Sodor3Stage.fir,3399,4,imm_b[11:11]), Coverage(auto_cover_out,_GEN_2,700,Sodor3Stage.fir,3435,4,io_ctl_brjmp_sel), Coverage(auto_cover_out,_GEN_3,701,Sodor3Stage.fir,3327,4,(io_ctl_pc_sel == 3)), Coverage(auto_cover_out,_GEN_4,702,Sodor3Stage.fir,3663,4,(wb_reg_ctrl_wb_sel == 3)), Coverage(auto_cover_out,_GEN_5,703,Sodor3Stage.fir,3664,4,(wb_reg_ctrl_wb_sel == 2)), Coverage(auto_cover_out,_GEN_6,704,Sodor3Stage.fir,3665,4,(wb_reg_ctrl_wb_sel == 1)), Coverage(auto_cover_out,_GEN_7,705,Sodor3Stage.fir,3363,4,(exe_rs1_addr != 0)), Coverage(auto_cover_out,_GEN_8,706,Sodor3Stage.fir,3366,4,(exe_rs2_addr != 0)), Coverage(auto_cover_out,_GEN_9,707,Sodor3Stage.fir,3391,4,imm_i[11:11]), Coverage(auto_cover_out,_GEN_10,708,Sodor3Stage.fir,3395,4,imm_s[11:11]), Coverage(auto_cover_out,_GEN_11,709,Sodor3Stage.fir,3412,4,((((wb_reg_wbaddr == exe_rs1_addr) and (exe_rs1_addr != 0)) and wb_reg_ctrl_rf_wen) and wb_reg_ctrl_bypassable)), Coverage(auto_cover_out,_GEN_13,711,Sodor3Stage.fir,3421,4,(io_ctl_op1_sel == 1)), Coverage(auto_cover_out,_GEN_14,712,Sodor3Stage.fir,3426,4,(io_ctl_op2_sel == 2)), Coverage(auto_cover_out,_GEN_15,713,Sodor3Stage.fir,3427,4,(io_ctl_op2_sel == 3)), Coverage(auto_cover_out,_GEN_16,714,Sodor3Stage.fir,3348,4,(wb_reg_ctrl_wb_sel == 0)), Coverage(auto_cover_out,_GEN_23,721,,-1,-1,(io_ctl_op1_sel == 2)), Coverage(auto_cover_out,_GEN_0,722,Sodor3Stage.fir,3773,4,io_dw_en), Coverage(auto_cover_out,_GEN_4,726,,-1,-1,1), Coverage(auto_cover_out,_GEN_0,738,Sodor3Stage.fir,3888,4,(sync_data).io_dataInstr_0_data[7:7]), Coverage(auto_cover_out,_GEN_1,739,Sodor3Stage.fir,3894,4,(sync_data).io_dataInstr_0_data[15:15]), Coverage(auto_cover_out,_GEN_5,743,Sodor3Stage.fir,3929,6,(io_core_ports_0_req_bits_typ == 2))),192)
+ [35minfo ] [0.000] Elaborating design...
+coverage_byte_count: 198
+input_byte_count: 8
+coverage width: 1536
+ [35minfo ] [0.791] Done elaborating.
+Total FIRRTL Compile Time: 3226.2 ms
+ [35minfo ] [0.000] Elaborating design...
+coverage_byte_count: 198
+input_byte_count: 8
+coverage width: 1536
+ [35minfo ] [0.332] Done elaborating.
+Total FIRRTL Compile Time: 1233.0 ms
+ [32msuccess ]   Total time: 32 s, completed Jul 12, 2019 8:58:54 AM 
+mv harness/VerilatorHarness.v /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_VHarness.v
+mv harness/E2ECoverageHarness.v /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_E2EHarness.v
+mkdir -p /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage
+cd /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage && meson ../../verilator --buildtype=release \
+                         -Dtrace=false -Dbuild_dir='/home/mustafa/Desktop/test/rfuzz/build' -Ddut='Sodor3Stage' \
+                      && ninja
+The Meson build system
+Version: 0.45.1
+Source dir: /home/mustafa/Desktop/test/rfuzz/verilator
+Build dir: /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage
+Build type: native build
+Project name: fuzz-server
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program verilator.py found: YES (/home/mustafa/Desktop/test/rfuzz/verilator/verilator.py)
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Native dependency verilator found: YES 3.916 2017-11-25
+Program dut_gen.py found: YES (/home/mustafa/Desktop/test/rfuzz/verilator/dut_gen.py)
+Build targets in project: 4
+Found ninja-1.8.2 at /usr/bin/ninja
+[1/10] Generating dut_hpp with a custom command.
+[2/10] Generating verilator with a custom command.
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_valid
+%Warning-PINMISSING: Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_addr
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_data
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_fcn
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_VHarness.v:417: Cell has missing pin: io_imem_req_bits_typ
+[3/10] Compiling C++ object 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o'.
+[4/10] Compiling C++ object 'sim@sta/meson-generated_.._verilated_vcd_c.cpp.o'.
+[5/10] Compiling C++ object 'sim@sta/meson-generated_.._verilated.cpp.o'.
+[6/10] Compiling C++ object 'server@exe/top.cpp.o'.
+[7/10] Compiling C++ object 'server@exe/fpga_queue.cpp.o'.
+[8/10] Compiling C++ object 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o'.
+[9/10] Linking static target libsim.a.
+[10/10] Linking target server.
+mv /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage/server /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_server
+mkdir -p /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage.e2e
+cd /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage.e2e && meson ../../e2e --buildtype=release \
+                             -Dtrace=false -Dbuild_dir='/home/mustafa/Desktop/test/rfuzz/build' -Ddut='Sodor3Stage' \
+                          && ninja
+The Meson build system
+Version: 0.45.1
+Source dir: /home/mustafa/Desktop/test/rfuzz/e2e
+Build dir: /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage.e2e
+Build type: native build
+Project name: coverage
+Native C++ compiler: c++ (gcc 7.4.0 "c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program ../verilator/verilator.py found: YES (/home/mustafa/Desktop/test/rfuzz/e2e/../verilator/verilator.py)
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Native dependency verilator found: YES 3.916 2017-11-25
+Program ../verilator/dut_gen.py found: YES (/home/mustafa/Desktop/test/rfuzz/e2e/../verilator/dut_gen.py)
+Build targets in project: 4
+Found ninja-1.8.2 at /usr/bin/ninja
+[1/9] Generating dut_hpp with a custom command.
+[2/9] Generating verilator with a custom command.
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_E2EHarness.v:417: Cell has missing pin: io_imem_req_valid
+%Warning-PINMISSING: Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_E2EHarness.v:417: Cell has missing pin: io_imem_req_bits_addr
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_E2EHarness.v:417: Cell has missing pin: io_imem_req_bits_data
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_E2EHarness.v:417: Cell has missing pin: io_imem_req_bits_fcn
+%Warning-PINMISSING: /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_E2EHarness.v:417: Cell has missing pin: io_imem_req_bits_typ
+[3/9] Compiling C++ object 'sim@sta/meson-generated_.._VSodor3Stage_E2EHarness__Syms.cpp.o'.
+[4/9] Compiling C++ object 'sim@sta/meson-generated_.._verilated_vcd_c.cpp.o'.
+[5/9] Compiling C++ object 'sim@sta/meson-generated_.._verilated.cpp.o'.
+[6/9] Compiling C++ object 'cov@exe/end_to_end_top.cpp.o'.
+[7/9] Compiling C++ object 'sim@sta/meson-generated_.._VSodor3Stage_E2EHarness.cpp.o'.
+[8/9] Linking static target libsim.a.
+[9/9] Linking target cov.
+mv /home/mustafa/Desktop/test/rfuzz/build/vSodor3Stage.e2e/cov /home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_cov
+rm -rf /tmp/fpga
+mkdir /tmp/fpga
+/home/mustafa/Desktop/test/rfuzz/build/Sodor3Stage_server
+Fuzz Server for Sodor3Stage 
+Allocated Bytes per Input:    8
+Allocated Bytes per Coverage: 198
+created tx fifo
+created rx fifo
+Makefile:131: recipe for target 'run' failed

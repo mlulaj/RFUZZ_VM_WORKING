@@ -1,0 +1,32 @@
+[
+  {
+    "directory": "/home/mustafa/Desktop/rfuzz/build/vSodor3Stage",
+    "command": "c++  -Isim@sta -I. -I../../verilator -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o' -MF 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o.d' -o 'sim@sta/meson-generated_.._VSodor3Stage_VHarness.cpp.o' -c VSodor3Stage_VHarness.cpp",
+    "file": "VSodor3Stage_VHarness.cpp"
+  },
+  {
+    "directory": "/home/mustafa/Desktop/rfuzz/build/vSodor3Stage",
+    "command": "c++  -Isim@sta -I. -I../../verilator -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o' -MF 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o.d' -o 'sim@sta/meson-generated_.._VSodor3Stage_VHarness__Syms.cpp.o' -c VSodor3Stage_VHarness__Syms.cpp",
+    "file": "VSodor3Stage_VHarness__Syms.cpp"
+  },
+  {
+    "directory": "/home/mustafa/Desktop/rfuzz/build/vSodor3Stage",
+    "command": "c++  -Isim@sta -I. -I../../verilator -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._verilated_vcd_c.cpp.o' -MF 'sim@sta/meson-generated_.._verilated_vcd_c.cpp.o.d' -o 'sim@sta/meson-generated_.._verilated_vcd_c.cpp.o' -c verilated_vcd_c.cpp",
+    "file": "verilated_vcd_c.cpp"
+  },
+  {
+    "directory": "/home/mustafa/Desktop/rfuzz/build/vSodor3Stage",
+    "command": "c++  -Isim@sta -I. -I../../verilator -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -fPIC -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -Wno-char-subscripts -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -faligned-new -MD -MQ 'sim@sta/meson-generated_.._verilated.cpp.o' -MF 'sim@sta/meson-generated_.._verilated.cpp.o.d' -o 'sim@sta/meson-generated_.._verilated.cpp.o' -c verilated.cpp",
+    "file": "verilated.cpp"
+  },
+  {
+    "directory": "/home/mustafa/Desktop/rfuzz/build/vSodor3Stage",
+    "command": "c++  -Iserver@exe -I. -I../../verilator -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -faligned-new -MD -MQ 'server@exe/top.cpp.o' -MF 'server@exe/top.cpp.o.d' -o 'server@exe/top.cpp.o' -c ../../verilator/top.cpp",
+    "file": "../../verilator/top.cpp"
+  },
+  {
+    "directory": "/home/mustafa/Desktop/rfuzz/build/vSodor3Stage",
+    "command": "c++  -Iserver@exe -I. -I../../verilator -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -std=c++11 -O3 -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVL_USER_FINISH -faligned-new -MD -MQ 'server@exe/fpga_queue.cpp.o' -MF 'server@exe/fpga_queue.cpp.o.d' -o 'server@exe/fpga_queue.cpp.o' -c ../../verilator/fpga_queue.cpp",
+    "file": "../../verilator/fpga_queue.cpp"
+  }
+]

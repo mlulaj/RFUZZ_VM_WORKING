@@ -1,0 +1,18 @@
+build/
+.ivy2
+*.stamp
+
+# toplevel log files are ignored
+# move them to doc or fuzzer/log
+# if you want to commit them
+/*.log
+
+# CPython
+__pycache__/
+*.pyc
+
+# Vim
+*.swp
+
+# IntelliJ Idea
+.idea/

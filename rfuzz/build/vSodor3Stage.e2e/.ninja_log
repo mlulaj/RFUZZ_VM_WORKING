@@ -1,0 +1,22 @@
+# ninja log v5
+0	126	1562786972	dut.hpp	21896b5455c6a7f2
+0	5173	1562786977	VSodor3Stage_E2EHarness.h	c2ad162c60558e3c
+0	5173	1562786977	VSodor3Stage_E2EHarness__Syms.h	c2ad162c60558e3c
+0	5173	1562786977	VSodor3Stage_E2EHarness.cpp	c2ad162c60558e3c
+0	5173	1562786977	VSodor3Stage_E2EHarness__Syms.cpp	c2ad162c60558e3c
+0	5173	1562786977	verilated_vcd_c.cpp	c2ad162c60558e3c
+0	5173	1562786977	verilated.cpp	c2ad162c60558e3c
+5174	5784	1562786978	sim@sta/meson-generated_.._VSodor3Stage_E2EHarness__Syms.cpp.o	94fe7163357de1d
+5784	7431	1562786980	sim@sta/meson-generated_.._verilated_vcd_c.cpp.o	7e49403f5e539d8d
+7432	11704	1562786984	sim@sta/meson-generated_.._verilated.cpp.o	1a01f7c725b29c35
+11705	13168	1562786985	cov@exe/end_to_end_top.cpp.o	3cbced08e9e93665
+5173	43943	1562787016	sim@sta/meson-generated_.._VSodor3Stage_E2EHarness.cpp.o	39b13be9390025cc
+43943	43946	1562787016	libsim.a	642ee9e733558840
+43946	44024	1562787016	cov	c25f702c175771b4
+1	597	1562789518	sim@sta/meson-generated_.._VSodor3Stage_E2EHarness__Syms.cpp.o	94fe7163357de1d
+597	2412	1562789520	sim@sta/meson-generated_.._verilated_vcd_c.cpp.o	7e49403f5e539d8d
+2412	6415	1562789524	sim@sta/meson-generated_.._verilated.cpp.o	1a01f7c725b29c35
+6415	7697	1562789525	cov@exe/end_to_end_top.cpp.o	3cbced08e9e93665
+0	34490	1562789552	sim@sta/meson-generated_.._VSodor3Stage_E2EHarness.cpp.o	39b13be9390025cc
+34490	34499	1562789552	libsim.a	642ee9e733558840
+34499	34577	1562789552	cov	c25f702c175771b4
